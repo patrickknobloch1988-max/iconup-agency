@@ -137,7 +137,7 @@ export default function Home() {
   return (
     <main>
       <header className="header">
-        <a className="logo" href="#top">ICON<span>UP</span><sup>↗</sup></a>
+        <a className="logo" href="#top"><span className="logoWord">ICONUP</span><span className="logoMark" aria-hidden="true" /></a>
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
           <a href="#build">{t.nav[1]}</a>
@@ -277,7 +277,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="logo">ICON<span>UP</span><sup>↗</sup></div>
+        <div className="logo"><span className="logoWord">ICONUP</span><span className="logoMark" aria-hidden="true" /></div>
         <p>IconUp Agency · 2026</p>
         <p>{t.legal}</p>
       </footer>
