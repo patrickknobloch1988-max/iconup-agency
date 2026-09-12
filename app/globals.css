@@ -157,4 +157,4 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 
 .artistStatusBrand{display:inline-flex;align-items:center;gap:.4rem}.artistStatusMark{display:block;width:.7em;height:.7em;background:#111216;clip-path:polygon(0 0,100% 0,0 100%);flex:0 0 auto}
 
-.artistsTitleMark{display:inline-block;width:.42em;height:.42em;margin-left:.12em;vertical-align:.08em;background:#111216;clip-path:polygon(0 0,100% 0,0 100%)}
+.artistsTitleMark{display:inline-block;width:.55em;height:.55em;margin-left:.12em;vertical-align:.08em;background:#111216;clip-path:polygon(0 0,100% 0,0 100%)}
