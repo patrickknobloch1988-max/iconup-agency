@@ -6,7 +6,7 @@ type Language = "de" | "en";
 
 const content = {
   de: {
-    nav: ["Ansatz", "Was wir bauen", "Kontakt"],
+    nav: ["Ansatz", "Was wir bauen", "Artists", "Kontakt"],
     heroTop: "Artist Brand Development",
     hero2: "IST NUR",
     hero3: "DER ANFANG.",
@@ -42,10 +42,15 @@ const content = {
     send: "Nachricht senden",
     note:
       "Songwriter · Producer · Rapper · Vocalist — sowie Booking-, Brand- und Business-Anfragen.",
+    artistsLabel: "Roster",
+    artistsTitle: "DIE ARTISTS HINTER ICONUP.",
+    artistsText: "Digitale Artists mit eigener Identität, klarer Vision und dem Anspruch, mehr als nur Reichweite aufzubauen.",
+    artistType: "Artist",
+    artistStatus: "IconUp Roster",
     legal: "Impressum · Datenschutz"
   },
   en: {
-    nav: ["Approach", "What we build", "Contact"],
+    nav: ["Approach", "What we build", "Artists", "Contact"],
     heroTop: "Artist Brand Development",
     hero2: "IS ONLY",
     hero3: "THE START.",
@@ -81,6 +86,11 @@ const content = {
     send: "Send message",
     note:
       "Songwriters · Producers · Rappers · Vocalists — plus booking, brand and business enquiries.",
+    artistsLabel: "Roster",
+    artistsTitle: "THE ARTISTS BEHIND ICONUP.",
+    artistsText: "Digital artists with a distinct identity, a clear vision and the ambition to build beyond reach.",
+    artistType: "Artist",
+    artistStatus: "IconUp Roster",
     legal: "Legal · Privacy"
   }
 } as const;
@@ -131,7 +141,8 @@ export default function Home() {
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
           <a href="#build">{t.nav[1]}</a>
-          <a href="#contact">{t.nav[2]}</a>
+          <a href="#artists">{t.nav[2]}</a>
+          <a href="#contact">{t.nav[3]}</a>
         </nav>
         <div className="language">
           <button className={language === "de" ? "active" : ""} onClick={() => changeLanguage("de")}>DE</button>
@@ -180,6 +191,42 @@ export default function Home() {
               <b>↗</b>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="artists section" id="artists">
+        <div className="artistsIntro">
+          <p className="kicker">{t.artistsLabel}</p>
+          <h2>{t.artistsTitle}</h2>
+          <p className="artistsText">{t.artistsText}</p>
+        </div>
+
+        <div className="artistGrid">
+          <article className="artistCard">
+            <div className="artistVisual" aria-hidden="true">
+              <span className="artistMonogram">M+R</span>
+              <span className="artistIndex">01</span>
+            </div>
+            <div className="artistMeta">
+              <div>
+                <span>{t.artistType}</span>
+                <h3>MAV+RICH</h3>
+              </div>
+              <div className="artistStatus">{t.artistStatus}</div>
+            </div>
+          </article>
+
+          <article className="artistCard artistCardEmpty" aria-label="More artists coming soon">
+            <div className="artistVisual artistVisualEmpty">
+              <span>+</span>
+            </div>
+            <div className="artistMeta">
+              <div>
+                <span>Next</span>
+                <h3>MORE SOON</h3>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
