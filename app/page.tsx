@@ -198,7 +198,7 @@ export default function Home() {
 
       <section className="artists section" id="artists">
         <div className="artistsIntro">
-          <p className="kicker">{t.artistsLabel}</p>
+          <p className="kicker rosterKicker"><span>{t.artistsLabel}</span><span className="rosterMark" aria-hidden="true" /></p>
           <h2>{t.artistsTitle}</h2>
           <p className="artistsText">{t.artistsText}</p>
         </div>
