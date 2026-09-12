@@ -199,7 +199,7 @@ export default function Home() {
       <section className="artists section" id="artists">
         <div className="artistsIntro">
           <p className="kicker">{t.artistsLabel}</p>
-          <h2 className="artistsTitle">{t.artistsTitle}<span className="artistsTitleMark" aria-hidden="true" /></h2>
+          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="artistsIcon">ICON</span><span className="artistsUp">UP</span><span className="artistsTitleMark" aria-hidden="true" /></h2>
           <p className="artistsText">{t.artistsText}</p>
         </div>
 
