@@ -14,7 +14,7 @@ const content = {
       "IconUp macht aus digitalen Artists reale Marken — mit Identität, Strategie, Creative Direction und einer Vision, die über Plattformen hinausgeht.",
     heroCta: "Mit uns arbeiten",
     missionLabel: "Unsere Aufgabe",
-    missionTitle: "Reichweite kann verschwinden. Eine starke Marke bleibt.",
+    missionTitle: "Wir machen aus digitalen Artists echte Marken.",
     missionText:
       "Wir übersetzen digitale Aufmerksamkeit in eine erkennbare Identität, eine echte Community und ein Artist-Projekt mit langfristigem Wert.",
     principleLabel: "IconUp Prinzip",
@@ -58,7 +58,7 @@ const content = {
       "IconUp turns digital artists into real brands — through identity, strategy, creative direction and a vision built beyond platforms.",
     heroCta: "Work with us",
     missionLabel: "Our mission",
-    missionTitle: "Attention can disappear. A strong brand stays.",
+    missionTitle: "We turn digital artists into real brands.",
     missionText:
       "We turn digital attention into a recognizable identity, a real community and an artist project with long-term value.",
     principleLabel: "The IconUp principle",
@@ -184,10 +184,12 @@ export default function Home() {
         <h2>{t.buildTitle}</h2>
         <div className="serviceList">
           {t.services.map(([number, title, text]) => (
-            <article className="serviceRow" key={number}>
-              <span>{number}</span>
-              <h3>{title}</h3>
-              <p>{text}</p>
+            <article className="serviceCard" key={number}>
+              <span className="serviceNumber">{number}</span>
+              <div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </div>
               <b>↗</b>
             </article>
           ))}
