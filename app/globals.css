@@ -160,3 +160,6 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 .artistsTitleMark{display:inline-block;width:.72em;height:.72em;margin-left:.12em;vertical-align:.08em;background:#111216;clip-path:polygon(0 0,100% 0,0 100%)}
 
 .artistsTitle .artistsIcon{font-weight:400}.artistsTitle .artistsUp{font-weight:950}
+
+/* Fine-tune roster headline mark */
+.artistsTitleMark{margin-left:.06em;vertical-align:-.04em}
