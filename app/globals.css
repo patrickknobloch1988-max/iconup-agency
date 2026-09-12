@@ -144,3 +144,9 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   .serviceCard p{font-size:.72rem;line-height:1.35}
   .serviceCard b{right:.9rem;top:.8rem;font-size:1rem}
 }
+
+@media(max-width:820px){
+  .hero h1{font-size:clamp(2.85rem,13.2vw,5rem);font-weight:950;line-height:.88;letter-spacing:-.075em}
+  .section h2,.contact h2{font-size:clamp(2.15rem,9.6vw,3.9rem);font-weight:950;line-height:.93;letter-spacing:-.065em}
+  .serviceCard h3{font-weight:900}
+}
