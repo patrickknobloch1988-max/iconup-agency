@@ -43,7 +43,7 @@ const content = {
     note:
       "Songwriter · Producer · Rapper · Vocalist — sowie Booking-, Brand- und Business-Anfragen.",
     artistsLabel: "Roster",
-    artistsTitle: "DIE ARTISTS HINTER ICONUP.",
+    artistsTitle: "DIE ARTISTS HINTER ICONUP",
     artistsText: "Digitale Artists mit eigener Identität, klarer Vision und dem Anspruch, mehr als nur Reichweite aufzubauen.",
     artistType: "Artist",
     artistStatus: "IconUp Roster",
@@ -87,7 +87,7 @@ const content = {
     note:
       "Songwriters · Producers · Rappers · Vocalists — plus booking, brand and business enquiries.",
     artistsLabel: "Roster",
-    artistsTitle: "THE ARTISTS BEHIND ICONUP.",
+    artistsTitle: "THE ARTISTS BEHIND ICONUP",
     artistsText: "Digital artists with a distinct identity, a clear vision and the ambition to build beyond reach.",
     artistType: "Artist",
     artistStatus: "IconUp Roster",
@@ -199,7 +199,7 @@ export default function Home() {
       <section className="artists section" id="artists">
         <div className="artistsIntro">
           <p className="kicker">{t.artistsLabel}</p>
-          <h2>{t.artistsTitle}</h2>
+          <h2 className="artistsTitle">{t.artistsTitle}<span className="artistsTitleMark" aria-hidden="true" /></h2>
           <p className="artistsText">{t.artistsText}</p>
         </div>
 
@@ -214,7 +214,7 @@ export default function Home() {
                 <span>{t.artistType}</span>
                 <h3>MAV+RICH</h3>
               </div>
-              <div className="artistStatus artistStatusBrand"><span>{t.artistStatus}</span><span className="artistStatusMark" aria-hidden="true" /></div>
+              <div className="artistStatus">{t.artistStatus}</div>
             </div>
           </article>
 
