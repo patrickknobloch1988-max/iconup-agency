@@ -125,3 +125,6 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   .note{margin-top:48px;line-height:1.5}
   footer{grid-template-columns:1fr;gap:.75rem;padding:28px 18px}
 }
+.logoWord{display:inline-flex;align-items:baseline;color:#f4f1e9}
+.logoWord .logoIcon{font-weight:400;color:inherit}
+.logoWord .logoUp{font-weight:900;color:inherit}
