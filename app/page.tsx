@@ -137,7 +137,7 @@ export default function Home() {
   return (
     <main>
       <header className="header">
-        <a className="logo" href="#top"><span className="logoWord">IconUp</span><span className="logoMark" aria-hidden="true" /></a>
+        <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
           <a href="#build">{t.nav[1]}</a>
