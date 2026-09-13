@@ -554,3 +554,17 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   .heroSliderOnly .heroSlideBody>p:last-child{font-size:1rem;max-width:30ch}
   .heroSliderOnly .heroStats{margin:0 -18px}
 }
+
+/* MAV+RICH reference image */
+.heroSlideImageWrap{position:absolute;inset:0;overflow:hidden}
+.heroSlideImage{width:100%;height:100%;object-fit:cover;object-position:center;background:#f2c900}
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideBody,
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideTop,
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideControls{position:relative;z-index:2}
+.heroSlideVisual:has(.heroSlideImageWrap)::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.32) 48%,rgba(0,0,0,.06) 100%);z-index:1}
+.heroSlideVisual:has(.heroSlideImageWrap){color:#fff}
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideProgress button{background:rgba(255,255,255,.28)}
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideProgress button.active{background:#fff}
+.heroSlideVisual:has(.heroSlideImageWrap) .heroSlideArrows button{border-color:rgba(255,255,255,.35);color:#fff}
+.artistVisualPhoto{padding:0;background:#f2c900}
+.artistPhoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
