@@ -316,26 +316,34 @@ export default function Home() {
       </section>
 
       <section className="contact section" id="contact">
-        <div className="contactHead">
-          <p className="kicker light">Contact</p>
-          <h2>LET&apos;S BUILD SOMETHING REAL.</h2>
-          <p>{t.contactText}</p>
+        <div className="contactSimple">
+          <p className="contactEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
+          <h2>{language === "de" ? "LASS UNS REDEN." : "LET'S TALK."}</h2>
+          <p className="contactIntro">
+            {language === "de"
+              ? "Für Artists, Projekte und Kooperationen."
+              : "For artists, projects and collaborations."}
+          </p>
+          <a className="contactEmailHero" href="mailto:hello@iconup.agency">hello@iconup.agency</a>
         </div>
-
-        <div className="contactCta">
-          <a className="emailCta" href="mailto:hello@iconup.agency">
-            <span>{language === "de" ? "E-Mail schreiben" : "Send an email"}</span><b>↗</b>
-          </a>
-          <a className="contactEmail" href="mailto:hello@iconup.agency">hello@iconup.agency</a>
-        </div>
-
-        <p className="note">{t.note}</p>
       </section>
 
-      <footer>
-        <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
-        <p>IconUp Agency · 2026</p>
-        <p>{t.legal}</p>
+      <footer className="siteFooter">
+        <div className="footerTop">
+          <div className="footerBrand">
+            <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
+            <p>{language === "de" ? "Wir machen aus digitalen Artists reale Marken." : "Turning digital artists into real brands."}</p>
+          </div>
+          <nav className="footerNav" aria-label="Footer">
+            <a href="#services">{language === "de" ? "Unsere Aufgabe" : "What we do"}</a>
+            <a href="#artists">{language === "de" ? "Artists" : "Artists"}</a>
+            <a href="#contact">{language === "de" ? "Kontakt" : "Contact"}</a>
+          </nav>
+        </div>
+        <div className="footerBottom">
+          <span>© 2026 ICON/UP AGENCY</span>
+          <span>{t.legal}</span>
+        </div>
       </footer>
     </main>
   );
