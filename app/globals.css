@@ -341,3 +341,9 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 @media screen and (max-width:390px){
   .heroStats .kpiNumber{font-size:clamp(2.88rem,14.18vw,3.71rem) !important}
 }
+
+/* Slightly more open KPI tracking */
+.kpiNumber{letter-spacing:-.045em}
+@media screen and (max-width:820px){
+  .heroStats .kpiNumber{letter-spacing:-.04em !important}
+}
