@@ -167,8 +167,8 @@ export default function Home() {
         <div className="heroStats">
           {t.stats.map(([number, label]) => (
             <div className="heroStat" key={number}>
-              <span>{number}</span>
-              <strong>{label}</strong>
+              <div className="kpiNumber">{number}</div>
+              <div className="kpiLabel">{label}</div>
             </div>
           ))}
         </div>
