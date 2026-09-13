@@ -267,3 +267,40 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 @media screen and (max-width:390px){
   .heroStats .heroStat .heroStatValue{font-size:clamp(4rem,19vw,5.3rem) !important}
 }
+
+/* Rebuilt KPI typography: number and label are fully independent */
+.kpiNumber{
+  display:block;
+  font-size:4.75rem;
+  font-weight:950;
+  line-height:.78;
+  letter-spacing:-.09em;
+  color:#f5f2ea;
+  white-space:nowrap;
+}
+.kpiLabel{
+  display:block;
+  margin-top:.7rem;
+  font-size:.58rem;
+  font-weight:600;
+  line-height:1;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:rgba(245,242,234,.5);
+}
+@media screen and (max-width:820px){
+  .heroStats .heroStat{min-height:105px;padding:.9rem 18px}
+  .heroStats .kpiNumber{
+    font-size:clamp(4.8rem,22vw,7rem) !important;
+    font-weight:950 !important;
+    line-height:.72 !important;
+  }
+  .heroStats .kpiLabel{
+    margin-top:.55rem;
+    font-size:.58rem !important;
+    font-weight:600 !important;
+  }
+}
+@media screen and (max-width:390px){
+  .heroStats .kpiNumber{font-size:clamp(4.3rem,21vw,5.5rem) !important}
+}
