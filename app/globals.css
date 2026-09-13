@@ -900,3 +900,13 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   font-weight:700!important;
   letter-spacing:.075em!important;
 }
+
+/* ICONUP wordmark: ICON bold, UP regular */
+.logoIcon,
+.artistsIcon{
+  font-weight:800!important;
+}
+.logoUp,
+.artistsUp{
+  font-weight:400!important;
+}
