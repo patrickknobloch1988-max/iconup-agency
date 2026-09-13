@@ -910,3 +910,16 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 .artistsUp{
   font-weight:400!important;
 }
+
+/* Fine-tune IconUp wordmark */
+.logoIcon,
+.logoUp,
+.artistsIcon,
+.artistsUp,
+.logoWord{
+  letter-spacing:.06em!important;
+}
+.logoIcon,
+.artistsIcon{
+  font-weight:900!important;
+}
