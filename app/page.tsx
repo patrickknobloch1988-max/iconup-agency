@@ -13,6 +13,7 @@ const content = {
     heroText:
       "IconUp macht aus digitalen Artists reale Marken — mit Identität, Strategie, Creative Direction und einer Vision, die über Plattformen hinausgeht.",
     heroCta: "Mit uns arbeiten",
+    stats: [["01", "Artist Development"], ["02", "Creative Direction"], ["03", "Brand Building"], ["04", "Real World"]],
     missionLabel: "Unsere Aufgabe",
     missionTitle: "Wir machen aus digitalen Artists echte Marken.",
     missionText:
@@ -57,6 +58,7 @@ const content = {
     heroText:
       "IconUp turns digital artists into real brands — through identity, strategy, creative direction and a vision built beyond platforms.",
     heroCta: "Work with us",
+    stats: [["01", "Artist Development"], ["02", "Creative Direction"], ["03", "Brand Building"], ["04", "Real World"]],
     missionLabel: "Our mission",
     missionTitle: "We turn digital artists into real brands.",
     missionText:
@@ -161,6 +163,14 @@ export default function Home() {
         <div className="heroBottom">
           <p>{t.heroText}</p>
           <a className="roundLink" href="#contact"><span>{t.heroCta}</span><b>↘</b></a>
+        </div>
+        <div className="heroStats">
+          {t.stats.map(([number, label]) => (
+            <div className="heroStat" key={number}>
+              <span>{number}</span>
+              <strong>{label}</strong>
+            </div>
+          ))}
         </div>
       </section>
 
