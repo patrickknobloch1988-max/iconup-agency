@@ -719,3 +719,51 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
     scroll-snap-align:start;
   }
 }
+
+/* Roster cards: full-bleed, no white frame */
+.artistGrid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+}
+.artistCard,
+.artistCardFeature{
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  box-shadow:none;
+  overflow:hidden;
+}
+.artistCardFeature .artistVisual{
+  width:100%;
+  margin:0;
+  border:0;
+  border-radius:0;
+}
+.artistCardFeature .artistVisual img{
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+@media(max-width:820px){
+  .artistGrid{
+    display:flex!important;
+    width:100%;
+    gap:.75rem;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding:0 12vw 0 0;
+    margin-top:2rem;
+    box-sizing:border-box;
+  }
+  .artistGrid::-webkit-scrollbar{display:none}
+  .artistGrid>.artistCard{
+    flex:0 0 86%;
+    width:86%;
+    max-width:86%;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+  }
+}
