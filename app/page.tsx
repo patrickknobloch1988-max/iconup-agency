@@ -181,7 +181,7 @@ export default function Home() {
             </div>
             {activeSlide === 0 && (
               <div className="heroArtistImage" aria-hidden="true">
-                <img src="/mav-rich.webp" alt="" />
+                <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000572c81f4b3b311307322a3b4.png" alt="" />
               </div>
             )}
             <div className="heroSlideBody">
@@ -260,7 +260,7 @@ export default function Home() {
         <div className="artistGrid">
           <article className="artistCard">
             <div className="artistVisual artistVisualMav">
-              <img src="/mav-rich.webp" alt="MAV+RICH" />
+              <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000572c81f4b3b311307322a3b4.png" alt="MAV+RICH" />
               <span className="artistIndex">01</span>
             </div>
             <div className="artistMeta">
