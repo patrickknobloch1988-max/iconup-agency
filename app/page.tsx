@@ -100,7 +100,26 @@ const content = {
 export default function Home() {
   const [language, setLanguage] = useState<Language>("de");
   const [type, setType] = useState("talent");
+  const [activeSlide, setActiveSlide] = useState(0);
   const t = content[language];
+  const heroSlides = language === "de"
+    ? [
+        { kicker: "Artist", title: "MAV+RICH", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
+        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" },
+        { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "Wir verbinden Musik, Content und reale Touchpoints zu einem System.", meta: "2026" }
+      ]
+    : [
+        { kicker: "Artist", title: "MAV+RICH", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
+        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" },
+        { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "We connect music, content and real-world touchpoints into one system.", meta: "2026" }
+      ];
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % 3);
+    }, 6500);
+    return () => window.clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     const saved = window.localStorage.getItem("iconup-language");
@@ -154,15 +173,50 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <div className="eyebrow"><span />{t.heroTop}</div>
-        <h1>
-          <span className="heroLineOne">DIGITAL {t.hero2}</span>
-          <span className="outline heroLineTwo">{t.hero3}</span>
-        </h1>
-        <div className="heroBottom">
-          <p>{t.heroText}</p>
-          <a className="roundLink" href="#contact"><span>{t.heroCta}</span><b>↘</b></a>
+        <div className="heroMain">
+          <div className="heroCopy">
+            <div className="eyebrow"><span />{t.heroTop}</div>
+            <h1>
+              <span className="heroLineOne">DIGITAL {t.hero2}</span>
+              <span className="outline heroLineTwo">{t.hero3}</span>
+            </h1>
+            <div className="heroBottom">
+              <p>{t.heroText}</p>
+              <a className="roundLink" href="#contact"><span>{t.heroCta}</span><b>↘</b></a>
+            </div>
+          </div>
+
+          <div className="heroSlider" aria-label="IconUp highlights">
+            <div className="heroSlideVisual">
+              <div className="heroSlideTop">
+                <span>{heroSlides[activeSlide].kicker}</span>
+                <span>{String(activeSlide + 1).padStart(2, "0")} / 03</span>
+              </div>
+              <div className="heroSlideBody">
+                <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
+                <h2>{heroSlides[activeSlide].title}</h2>
+                <p>{heroSlides[activeSlide].text}</p>
+              </div>
+              <div className="heroSlideControls">
+                <div className="heroSlideProgress">
+                  {heroSlides.map((_, index) => (
+                    <button
+                      key={index}
+                      className={index === activeSlide ? "active" : ""}
+                      onClick={() => setActiveSlide(index)}
+                      aria-label={`Slide ${index + 1}`}
+                    />
+                  ))}
+                </div>
+                <div className="heroSlideArrows">
+                  <button onClick={() => setActiveSlide((activeSlide + 2) % 3)} aria-label="Previous slide">←</button>
+                  <button onClick={() => setActiveSlide((activeSlide + 1) % 3)} aria-label="Next slide">→</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div className="heroStats">
           {t.stats.map(([number, label]) => (
             <div className="heroStat" key={number}>
