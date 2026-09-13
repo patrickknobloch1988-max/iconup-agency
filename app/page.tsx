@@ -172,51 +172,36 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="hero" id="top">
-        <div className="heroMain">
-          <div className="heroCopy">
-            <div className="eyebrow"><span />{t.heroTop}</div>
-            <h1>
-              <span className="heroLineOne">DIGITAL {t.hero2}</span>
-              <span className="outline heroLineTwo">{t.hero3}</span>
-            </h1>
-            <div className="heroBottom">
-              <p>{t.heroText}</p>
-              <a className="roundLink" href="#contact"><span>{t.heroCta}</span><b>↘</b></a>
+      <section className="hero heroSliderOnly" id="top">
+        <div className="heroSlider" aria-label="IconUp highlights">
+          <div className="heroSlideVisual">
+            <div className="heroSlideTop">
+              <span>{heroSlides[activeSlide].kicker}</span>
+              <span>{String(activeSlide + 1).padStart(2, "0")} / 03</span>
             </div>
-          </div>
-
-          <div className="heroSlider" aria-label="IconUp highlights">
-            <div className="heroSlideVisual">
-              <div className="heroSlideTop">
-                <span>{heroSlides[activeSlide].kicker}</span>
-                <span>{String(activeSlide + 1).padStart(2, "0")} / 03</span>
+            <div className="heroSlideBody">
+              <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
+              <h2>{heroSlides[activeSlide].title}</h2>
+              <p>{heroSlides[activeSlide].text}</p>
+            </div>
+            <div className="heroSlideControls">
+              <div className="heroSlideProgress">
+                {heroSlides.map((_, index) => (
+                  <button
+                    key={index}
+                    className={index === activeSlide ? "active" : ""}
+                    onClick={() => setActiveSlide(index)}
+                    aria-label={`Slide ${index + 1}`}
+                  />
+                ))}
               </div>
-              <div className="heroSlideBody">
-                <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
-                <h2>{heroSlides[activeSlide].title}</h2>
-                <p>{heroSlides[activeSlide].text}</p>
-              </div>
-              <div className="heroSlideControls">
-                <div className="heroSlideProgress">
-                  {heroSlides.map((_, index) => (
-                    <button
-                      key={index}
-                      className={index === activeSlide ? "active" : ""}
-                      onClick={() => setActiveSlide(index)}
-                      aria-label={`Slide ${index + 1}`}
-                    />
-                  ))}
-                </div>
-                <div className="heroSlideArrows">
-                  <button onClick={() => setActiveSlide((activeSlide + 2) % 3)} aria-label="Previous slide">←</button>
-                  <button onClick={() => setActiveSlide((activeSlide + 1) % 3)} aria-label="Next slide">→</button>
-                </div>
+              <div className="heroSlideArrows">
+                <button onClick={() => setActiveSlide((activeSlide + 2) % 3)} aria-label="Previous slide">←</button>
+                <button onClick={() => setActiveSlide((activeSlide + 1) % 3)} aria-label="Next slide">→</button>
               </div>
             </div>
           </div>
         </div>
-
         <div className="heroStats">
           {t.stats.map(([number, label]) => (
             <div className="heroStat" key={number}>
@@ -225,6 +210,7 @@ export default function Home() {
             </div>
           ))}
         </div>
+
       </section>
 
       <section className="section" id="approach">
