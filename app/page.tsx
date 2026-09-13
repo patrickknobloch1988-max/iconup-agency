@@ -104,12 +104,12 @@ export default function Home() {
   const t = content[language];
   const heroSlides = language === "de"
     ? [
-        { kicker: "Artist", title: "MAV+RICH", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "MAV+RICH", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER", image: "/file_00000000572c81f4b3b311307322a3b4.png" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" },
         { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "Wir verbinden Musik, Content und reale Touchpoints zu einem System.", meta: "2026" }
       ]
     : [
-        { kicker: "Artist", title: "MAV+RICH", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "MAV+RICH", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER", image: "/file_00000000572c81f4b3b311307322a3b4.png" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" },
         { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "We connect music, content and real-world touchpoints into one system.", meta: "2026" }
       ];
