@@ -292,7 +292,7 @@ export default function Home() {
 
           <article className="artistCard artistCardFeature">
             <div className="artistVisual artistVisualEyni">
-              <img src="/eyni.png" alt="EYNI" />
+              <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000db4c81f4b2f9c277ebe1117c.png" alt="EYNI" />
               <div className="artistCardOverlay" />
               <span className="artistIndex">02</span>
               <div className="artistCardContent">
