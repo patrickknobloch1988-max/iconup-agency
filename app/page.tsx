@@ -179,6 +179,11 @@ export default function Home() {
               <span>{heroSlides[activeSlide].kicker}</span>
               <span>{String(activeSlide + 1).padStart(2, "0")} / 03</span>
             </div>
+            {activeSlide === 0 && (
+              <div className="heroArtistImage" aria-hidden="true">
+                <img src="/mav-rich-yellow.webp" alt="" />
+              </div>
+            )}
             <div className="heroSlideBody">
               <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
               <h2>{heroSlides[activeSlide].title}</h2>
@@ -254,8 +259,8 @@ export default function Home() {
 
         <div className="artistGrid">
           <article className="artistCard">
-            <div className="artistVisual" aria-hidden="true">
-              <span className="artistMonogram">M+R</span>
+            <div className="artistVisual artistVisualMav">
+              <img src="/mav-rich-yellow.webp" alt="MAV+RICH" />
               <span className="artistIndex">01</span>
             </div>
             <div className="artistMeta">
