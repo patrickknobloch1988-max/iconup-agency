@@ -767,3 +767,14 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
     scroll-snap-stop:always;
   }
 }
+
+/* Keep roster cards visually flat */
+.artistCard,
+.artistCardFeature,
+.artistCardFeature .artistVisual,
+.artistVisualMav,
+.artistVisualMav img{
+  box-shadow:none!important;
+  filter:none!important;
+  text-shadow:none;
+}
