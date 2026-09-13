@@ -568,3 +568,5 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 .heroSlideVisual:has(.heroSlideImageWrap) .heroSlideArrows button{border-color:rgba(255,255,255,.35);color:#fff}
 .artistVisualPhoto{padding:0;background:#f2c900}
 .artistPhoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* git-trigger: rebuild with public assets */
