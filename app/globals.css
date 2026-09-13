@@ -778,3 +778,28 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   filter:none!important;
   text-shadow:none;
 }
+
+/* Roster interaction: no card shadow, stronger full-card gradient on hover/active */
+.artistGrid .artistCard,
+.artistGrid .artistCard:hover,
+.artistGrid .artistCard:focus,
+.artistGrid .artistCard:focus-visible,
+.artistGrid .artistCard:active,
+.artistGrid .artistCardFeature,
+.artistGrid .artistCardFeature:hover,
+.artistGrid .artistCardFeature:focus,
+.artistGrid .artistCardFeature:active{
+  box-shadow:none!important;
+  filter:none!important;
+  transform:none!important;
+  outline:none;
+}
+.artistCardFeature .artistCardOverlay{
+  background:linear-gradient(180deg,rgba(0,0,0,.03) 0%,rgba(0,0,0,.08) 44%,rgba(0,0,0,.76) 100%);
+  transition:background .28s ease;
+}
+.artistCardFeature:hover .artistCardOverlay,
+.artistCardFeature:focus-within .artistCardOverlay,
+.artistCardFeature:active .artistCardOverlay{
+  background:linear-gradient(180deg,rgba(0,0,0,.22) 0%,rgba(0,0,0,.30) 42%,rgba(0,0,0,.84) 100%);
+}
