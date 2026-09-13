@@ -572,3 +572,28 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 /* git-trigger: rebuild with public assets */
 
 /* trigger vercel git deploy 2026-09-13 */
+
+/* MAV+RICH image presentation */
+.heroArtistImage{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+}
+.heroArtistImage img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.artistVisualMav{
+  padding:0;
+}
+.artistVisualMav img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
