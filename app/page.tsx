@@ -312,20 +312,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </article>
-
-          <article className="artistCard artistCardEmpty" aria-label="More artists coming soon">
-            <div className="artistVisual artistVisualEmpty">
-              <span>+</span>
-            </div>
-            <div className="artistMeta">
-              <div>
-                <span>Next</span>
-                <h3>MORE SOON</h3>
-              </div>
-            </div>
-          </article>
-        </div>
+          </article>        </div>
       </section>
 
       <section className="contact section" id="contact">
