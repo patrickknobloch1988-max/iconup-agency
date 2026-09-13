@@ -156,9 +156,8 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="eyebrow"><span />{t.heroTop}</div>
         <h1>
-          <span>DIGITAL</span>
-          <span>{t.hero2}</span>
-          <span className="outline">{t.hero3}</span>
+          <span className="heroLineOne">DIGITAL {t.hero2}</span>
+          <span className="outline heroLineTwo">{t.hero3}</span>
         </h1>
         <div className="heroBottom">
           <p>{t.heroText}</p>
