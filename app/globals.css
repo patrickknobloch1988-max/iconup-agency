@@ -890,3 +890,13 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   width:.24em!important;
   height:.24em!important;
 }
+
+/* Unify ICONUP wordmark weight and tracking across header, roster and footer */
+.logoIcon,
+.logoUp,
+.artistsIcon,
+.artistsUp,
+.logoWord{
+  font-weight:700!important;
+  letter-spacing:.075em!important;
+}
