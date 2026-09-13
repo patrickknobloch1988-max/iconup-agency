@@ -865,3 +865,28 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
     font-size:.64rem;
   }
 }
+
+/* Smaller IconUp triangle marks, tucked over the P */
+.logo{gap:0}
+.logoMark{
+  width:.29em!important;
+  height:.29em!important;
+  margin-left:-.05em;
+  align-self:flex-start;
+  transform:translateY(-.05em);
+}
+.header .logoMark{
+  width:.29em!important;
+  height:.29em!important;
+}
+.artistsTitleMark{
+  width:.24em!important;
+  height:.24em!important;
+  margin-left:-.03em!important;
+  vertical-align:.64em!important;
+}
+.rosterMark,
+.artistStatusMark{
+  width:.24em!important;
+  height:.24em!important;
+}
