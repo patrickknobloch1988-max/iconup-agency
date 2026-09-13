@@ -158,7 +158,7 @@ export default function Home() {
   return (
     <main>
       <header className="header">
-        <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
+        <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
           <a href="#build">{t.nav[1]}</a>
@@ -253,7 +253,7 @@ export default function Home() {
       <section className="artists section" id="artists">
         <div className="artistsIntro">
           <p className="kicker">{t.artistsLabel}</p>
-          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="logo rosterLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></span></h2>
+          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="logo rosterLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></span></h2>
           <p className="artistsText">{t.artistsText}</p>
         </div>
 
@@ -333,7 +333,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
+        <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
         <p>IconUp Agency · 2026</p>
         <p>{t.legal}</p>
       </footer>
