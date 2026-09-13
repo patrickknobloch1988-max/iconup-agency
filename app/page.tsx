@@ -13,7 +13,7 @@ const content = {
     heroText:
       "Wir machen aus digitalen Artists Marken, die bleiben.",
     heroCta: "Mit uns arbeiten",
-    stats: [["1", "Artist"], ["250K+", "Streams"], ["5M+", "Social Views"], ["3", "Releases"]],
+    stats: [["3", "Artists"], ["1M+", "Streams"], ["10M", "Social Views"], ["3", "Releases"]],
     missionLabel: "Unsere Aufgabe",
     missionTitle: "Wir machen aus digitalen Artists echte Marken.",
     missionText:
@@ -58,7 +58,7 @@ const content = {
     heroText:
       "We turn digital artists into brands that last.",
     heroCta: "Work with us",
-    stats: [["1", "Artist"], ["250K+", "Streams"], ["5M+", "Social Views"], ["3", "Releases"]],
+    stats: [["3", "Artists"], ["1M+", "Streams"], ["10M", "Social Views"], ["3", "Releases"]],
     missionLabel: "Our mission",
     missionTitle: "We turn digital artists into real brands.",
     missionText:
