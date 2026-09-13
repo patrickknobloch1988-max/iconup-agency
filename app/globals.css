@@ -470,3 +470,16 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 
 /* Square IconUp CTA */
 .heroBottom .roundLink{border-radius:0}
+
+/* KPI -10% and improved global display line-height */
+.kpiNumber{font-size:2.88rem;line-height:.9}
+@media screen and (max-width:820px){
+  .heroStats .kpiNumber{font-size:clamp(2.92rem,13.37vw,4.26rem) !important;line-height:.9 !important}
+}
+@media screen and (max-width:390px){
+  .heroStats .kpiNumber{font-size:clamp(2.59rem,12.76vw,3.34rem) !important;line-height:.9 !important}
+}
+.hero h1{line-height:.96}
+.section h2,.contact h2{line-height:1.02}
+.serviceCard h3,.artistMeta h3{line-height:1.08}
+.heroBottom>p{line-height:1.45}
