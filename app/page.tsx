@@ -253,7 +253,7 @@ export default function Home() {
       <section className="artists section" id="artists">
         <div className="artistsIntro">
           <p className="kicker">{t.artistsLabel}</p>
-          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="artistsIcon">ICON</span><span className="artistsUp">UP</span><span className="artistsTitleMark" aria-hidden="true" /></h2>
+          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="logo rosterLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></span></h2>
           <p className="artistsText">{t.artistsText}</p>
         </div>
 
@@ -333,7 +333,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="logo"><span className="logoWord">ICONUP</span><span className="logoMark" aria-hidden="true" /></div>
+        <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
         <p>IconUp Agency · 2026</p>
         <p>{t.legal}</p>
       </footer>
