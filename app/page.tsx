@@ -269,8 +269,8 @@ export default function Home() {
                 <p className="artistGenre">{language === "de" ? "Deutschrap · French Rap" : "German Rap · French Rap"}</p>
                 <p className="artistDescription">
                   {language === "de"
-                    ? "Zwischen Straße, Melodie und visueller Identität. MAV+RICH verbindet deutschen und französischen Rap zu einer eigenen Welt."
-                    : "Street energy, melody and a distinct visual identity. MAV+RICH connects German and French rap in one world."}
+                    ? "Straße, Melodie und visuelle Identität verbinden deutschen und französischen Rap."
+                    : "Street energy, melody and visual identity connect German and French rap."}
                 </p>
                 <div className="artistSocials" aria-label="MAV+RICH platforms">
                   <span className="artistSocial" title="Spotify" aria-label="Spotify">
