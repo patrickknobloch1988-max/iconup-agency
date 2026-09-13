@@ -248,41 +248,12 @@ export default function Home() {
           <p>{t.contactText}</p>
         </div>
 
-        <form className="contactForm" onSubmit={onSubmit}>
-          <label>
-            <span>{t.inquiry}</span>
-            <select name="type" value={type} onChange={(e) => setType(e.target.value)}>
-              <option value="talent">{t.talent}</option>
-              <option value="booking">Booking</option>
-              <option value="brand">{t.brand}</option>
-              <option value="business">Business</option>
-              <option value="press">{t.press}</option>
-              <option value="other">{t.other}</option>
-            </select>
-          </label>
-
-          {type === "talent" && (
-            <label>
-              <span>{t.role}</span>
-              <select name="role">
-                <option>Songwriter</option>
-                <option>Producer</option>
-                <option>Rapper</option>
-                <option>Vocalist</option>
-              </select>
-            </label>
-          )}
-
-          <div className="formGrid">
-            <label><span>Name</span><input name="name" required /></label>
-            <label><span>{t.email}</span><input name="email" type="email" required /></label>
-          </div>
-
-          <label><span>Social / Website</span><input name="social" placeholder="@ / https://" /></label>
-          <label><span>{t.message}</span><textarea name="message" rows={5} required /></label>
-
-          <button className="submit" type="submit"><span>{t.send}</span><b>↗</b></button>
-        </form>
+        <div className="contactCta">
+          <a className="emailCta" href="mailto:hello@iconup.agency">
+            <span>{language === "de" ? "E-Mail schreiben" : "Send an email"}</span><b>↗</b>
+          </a>
+          <a className="contactEmail" href="mailto:hello@iconup.agency">hello@iconup.agency</a>
+        </div>
 
         <p className="note">{t.note}</p>
       </section>
