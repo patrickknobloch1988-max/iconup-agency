@@ -233,3 +233,18 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
 @media screen and (max-width:390px){
   .heroStats .heroStat .heroStatValue{font-size:3.15rem !important}
 }
+
+@media screen and (max-width:390px){
+  .heroStats .heroStat{min-height:112px}
+  .heroStats .heroStat .heroStatValue{
+    font-size:3.45rem !important;
+    font-weight:950 !important;
+    line-height:.8 !important;
+  }
+  .heroStats .heroStat .heroStatLabel{
+    font-size:.61rem !important;
+    font-weight:700;
+    letter-spacing:.12em;
+    color:rgba(245,242,234,.62);
+  }
+}
