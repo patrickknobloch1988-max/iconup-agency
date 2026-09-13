@@ -13,7 +13,7 @@ const content = {
     heroText:
       "IconUp macht aus digitalen Artists reale Marken — mit Identität, Strategie, Creative Direction und einer Vision, die über Plattformen hinausgeht.",
     heroCta: "Mit uns arbeiten",
-    stats: [["01", "Artist Development"], ["02", "Creative Direction"], ["03", "Brand Building"], ["04", "Real World"]],
+    stats: [["1", "Artist"], ["250K+", "Streams"], ["5M+", "Social Views"], ["3", "Releases"]],
     missionLabel: "Unsere Aufgabe",
     missionTitle: "Wir machen aus digitalen Artists echte Marken.",
     missionText:
@@ -58,7 +58,7 @@ const content = {
     heroText:
       "IconUp turns digital artists into real brands — through identity, strategy, creative direction and a vision built beyond platforms.",
     heroCta: "Work with us",
-    stats: [["01", "Artist Development"], ["02", "Creative Direction"], ["03", "Brand Building"], ["04", "Real World"]],
+    stats: [["1", "Artist"], ["250K+", "Streams"], ["5M+", "Social Views"], ["3", "Releases"]],
     missionLabel: "Our mission",
     missionTitle: "We turn digital artists into real brands.",
     missionText:
