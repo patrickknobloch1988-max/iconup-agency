@@ -467,3 +467,6 @@ footer p{margin:0;font-size:.62rem;opacity:.48;text-transform:uppercase;letter-s
   }
   .heroBottom .roundLink span{font-size:.63rem}
 }
+
+/* Square IconUp CTA */
+.heroBottom .roundLink{border-radius:0}
