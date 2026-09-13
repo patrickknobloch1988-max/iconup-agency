@@ -290,6 +290,30 @@ export default function Home() {
             </div>
           </article>
 
+          <article className="artistCard artistCardFeature">
+            <div className="artistVisual artistVisualEyni">
+              <img src="/eyni.png" alt="EYNI" />
+              <div className="artistCardOverlay" />
+              <span className="artistIndex">02</span>
+              <div className="artistCardContent">
+                <span className="artistType">{language === "de" ? "Artist · Vocalist" : "Artist · Vocalist"}</span>
+                <h3>EYNI</h3>
+                <p className="artistGenre">{language === "de" ? "Afropop · Urban Pop" : "Afropop · Urban Pop"}</p>
+                <p className="artistDescription">
+                  {language === "de"
+                    ? "Dunkle, warme Vocals treffen auf modernen Afropop und urbane Ästhetik."
+                    : "Dark, warm vocals meet modern Afropop and an urban aesthetic."}
+                </p>
+                <div className="artistSocials" aria-label="EYNI platforms">
+                  <span className="artistSocial" title="Spotify" aria-label="Spotify">SP</span>
+                  <span className="artistSocial" title="Apple Music" aria-label="Apple Music">AM</span>
+                  <span className="artistSocial" title="Instagram" aria-label="Instagram">IG</span>
+                  <span className="artistSocial" title="TikTok" aria-label="TikTok">TT</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
           <article className="artistCard artistCardEmpty" aria-label="More artists coming soon">
             <div className="artistVisual artistVisualEmpty">
               <span>+</span>
