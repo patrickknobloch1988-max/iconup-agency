@@ -158,6 +158,7 @@ export default function Home() {
   return (
     <main>
       <header className="header">
+        <div className="siteContainer headerInner">
         <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
@@ -170,9 +171,10 @@ export default function Home() {
           <span>/</span>
           <button className={language === "en" ? "active" : ""} onClick={() => changeLanguage("en")}>EN</button>
         </div>
+        </div>
       </header>
 
-      <section className="hero heroSliderOnly" id="top">
+      <section className="hero heroSliderOnly siteContainerSection" id="top">
         <div className="heroSlider" aria-label="IconUp highlights">
           <div className="heroSlideVisual">
             <div className="heroSlideTop">
@@ -315,7 +317,7 @@ export default function Home() {
           </article>        </div>
       </section>
 
-      <section className="contact section" id="contact">
+      <section className="contact section siteContainerSection" id="contact">
         <div className="contactSimple">
           <p className="contactEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
           <h2>{language === "de" ? "LASS UNS REDEN." : "LET'S TALK."}</h2>
@@ -329,6 +331,7 @@ export default function Home() {
       </section>
 
       <footer className="siteFooter">
+        <div className="siteContainer footerInner">
         <div className="footerTop">
           <div className="footerBrand">
             <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
@@ -343,6 +346,7 @@ export default function Home() {
         <div className="footerBottom">
           <span>© 2026 ICON/UP AGENCY</span>
           <span>{t.legal}</span>
+        </div>
         </div>
       </footer>
     </main>
