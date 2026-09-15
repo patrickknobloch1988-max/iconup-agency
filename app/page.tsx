@@ -220,7 +220,7 @@ export default function Home() {
 
       </section>
 
-      <section className="section" id="approach">
+      <section className="section siteContainerSection" id="approach">
         <p className="kicker">{t.missionLabel}</p>
         <h2>{t.missionTitle}</h2>
         <div className="statementGrid">
@@ -229,13 +229,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="principle section">
+      <section className="principle section siteContainerSection">
         <p className="kicker light">{t.principleLabel}</p>
         <h2>{t.principleTitle}</h2>
         <p className="principleText">{t.principleText}</p>
       </section>
 
-      <section className="section" id="build">
+      <section className="section siteContainerSection" id="build">
         <p className="kicker">{t.buildLabel}</p>
         <h2>{t.buildTitle}</h2>
         <div className="serviceList">
@@ -252,7 +252,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="artists section" id="artists">
+      <section className="artists section siteContainerSection" id="artists">
         <div className="artistsIntro">
           <p className="kicker">{t.artistsLabel}</p>
           <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="logo rosterLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></span></h2>
