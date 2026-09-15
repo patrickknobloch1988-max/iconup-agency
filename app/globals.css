@@ -1128,3 +1128,29 @@ body{background:#fff;color:#000}
     max-width:100%;
   }
 }
+
+/* Navigation: same centered container axis as all page content */
+.header{
+  width:100%;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+.header .headerInner{
+  width:min(100% - (var(--gutter) * 2),var(--container))!important;
+  max-width:var(--container)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+
+/* Remove all decorative horizontal lines from the top banner */
+.hero:after,
+.heroSliderOnly:after,
+.heroSlider:after,
+.heroSlideVisual:after{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+  border:0!important;
+}
