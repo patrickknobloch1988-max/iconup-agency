@@ -104,12 +104,12 @@ export default function Home() {
   const t = content[language];
   const heroSlides = language === "de"
     ? [
-        { kicker: "Artist", title: "MAV+RICH", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "IICII", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" },
         { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "Wir verbinden Musik, Content und reale Touchpoints zu einem System.", meta: "2026" }
       ]
     : [
-        { kicker: "Artist", title: "MAV+RICH", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "IICII", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" },
         { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "We connect music, content and real-world touchpoints into one system.", meta: "2026" }
       ];
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             {activeSlide === 0 && (
               <div className="heroArtistImage" aria-hidden="true">
-                <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000572c81f4b3b311307322a3b4.png" alt="" />
+                <img src="/iicii.png" alt="" />
               </div>
             )}
             <div className="heroSlideBody">
@@ -262,19 +262,19 @@ export default function Home() {
         <div className="artistGrid">
           <article className="artistCard artistCardFeature">
             <div className="artistVisual artistVisualMav">
-              <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000572c81f4b3b311307322a3b4.png" alt="MAV+RICH" />
+              <img src="/iicii.png" alt="IICII" />
               <div className="artistCardOverlay" />
               <span className="artistIndex">01</span>
               <div className="artistCardContent">
                 <span className="artistType">{t.artistType}</span>
-                <h3>MAV+RICH</h3>
-                <p className="artistGenre">{language === "de" ? "Deutschrap · French Rap" : "German Rap · French Rap"}</p>
+                <h3>IICII</h3>
+                <p className="artistGenre">{language === "de" ? "US Drill · Afropop" : "US Drill · Afropop"}</p>
                 <p className="artistDescription">
                   {language === "de"
-                    ? "Straße, Melodie und Identität verbinden deutschen und französischen Rap."
-                    : "Street energy, melody and visual identity connect German and French rap."}
+                    ? "Icy Drill, klare Ästhetik und digitale Identität verbinden Sound und visuelle Welt."
+                    : "Icy drill, a clear aesthetic and digital identity connect sound and visual world."}
                 </p>
-                <div className="artistSocials" aria-label="MAV+RICH platforms">
+                <div className="artistSocials" aria-label="IICII platforms">
                   <span className="artistSocial" title="Spotify" aria-label="Spotify">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.45a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34a.75.75 0 0 1 .25 1.02Zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.98-8.16-2.55-11.98-1.39a.94.94 0 1 1-.55-1.8c4.37-1.33 9.8-.69 13.51 1.58.44.27.58.85.31 1.3Zm.13-3.4C14.3 7.48 7.9 7.27 4.2 8.39a1.12 1.12 0 1 1-.65-2.14c4.25-1.29 11.32-1.04 15.77 1.59a1.12 1.12 0 0 1-1.14 1.94Z"/></svg>
                   </span>
