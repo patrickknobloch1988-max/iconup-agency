@@ -1263,3 +1263,22 @@ body{background:#fff;color:#000}
   min-height:500px!important;
   max-height:500px!important;
 }
+
+/* Force roster label above Artists */
+.artists .artistsIntro{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  gap:0!important;
+}
+.artists .rosterEyebrow{
+  display:block!important;
+  width:100%!important;
+  margin:0 0 .7rem 0!important;
+}
+.artists .artistsTitle{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+}
