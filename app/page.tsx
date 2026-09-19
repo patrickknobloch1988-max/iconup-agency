@@ -320,17 +320,17 @@ export default function Home() {
 
       <footer className="siteFooter">
         <div className="footerContact">
-          <p className="footerEyebrow">CONTACT</p>
-          <h2>{language === "de" ? <>TALK TO <em>ICON/UP</em></> : <>TALK TO <em>ICON/UP</em></>}</h2>
+          <p className="footerEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
+          <h2>{language === "de" ? <>LASS UNS <em>VERBINDEN.</em></> : <>LET’S <em>CONNECT.</em></>}</h2>
           <p className="footerLead">
             {language === "de"
-              ? "Für Artists, Songwriter und Producer, mit denen wir zusammenarbeiten möchten. Für Labels, Sync und Presse. Direkter Draht zum Team — wir lesen alles."
-              : "For artists, songwriters, and producers we'd like to work with. For labels, sync, and press. Direct line to the team — we read everything."}
+              ? "Für ausgewählte kreative Projekte, Kooperationen, Labels, Sync und Presse. Schreib uns direkt — ohne Umwege."
+              : "For selected creative projects, collaborations, labels, sync and press. Reach us directly — no detours."}
           </p>
           <a className="footerContactButton" href="mailto:hello@iconup.agency">
-            {language === "de" ? "GET IN TOUCH" : "GET IN TOUCH"} <span>↗</span>
+            {language === "de" ? "NACHRICHT SENDEN" : "SEND A MESSAGE"} <span>↗</span>
           </a>
-          <p className="footerDirect">Direct line · <a href="mailto:hello@iconup.agency">hello@iconup.agency</a></p>
+          <p className="footerDirect"><span>{language === "de" ? "Direkter Kontakt" : "Direct contact"}</span> · <a href="mailto:hello@iconup.agency">hello@iconup.agency</a></p>
         </div>
         <div className="footerBottom">
           <span>© 2026 ICON/UP AGENCY</span>
