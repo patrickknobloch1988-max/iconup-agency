@@ -2304,3 +2304,10 @@ body{background:#fff;color:#000}
   margin-left:auto!important;
   margin-right:auto!important;
 }
+
+/* Desktop language switcher breathing room */
+@media(min-width:821px){
+  .header .language{
+    margin-right:1.5rem!important;
+  }
+}
