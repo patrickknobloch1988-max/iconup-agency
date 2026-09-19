@@ -1687,3 +1687,34 @@ body{background:#fff;color:#000}
     border-color:transparent rgba(0,0,0,.065) transparent transparent!important;
   }
 }
+
+/* Matching ICON/UP signature triangle — Artists, opposite side */
+.artists{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.artists>.artistsIntro,
+.artists>.artistGrid{
+  position:relative;
+  z-index:2;
+}
+.artists .artistsTriangle{
+  display:block!important;
+  position:absolute!important;
+  z-index:1!important;
+  top:0!important;
+  left:0!important;
+  width:0!important;
+  height:0!important;
+  border-style:solid!important;
+  border-width:0 0 clamp(24rem,42vw,48rem) clamp(24rem,42vw,48rem)!important;
+  border-color:transparent transparent transparent rgba(255,255,255,.075)!important;
+  pointer-events:none!important;
+}
+@media(max-width:820px){
+  .artists .artistsTriangle{
+    border-width:0 0 24rem 24rem!important;
+    border-color:transparent transparent transparent rgba(255,255,255,.065)!important;
+  }
+}
