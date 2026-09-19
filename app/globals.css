@@ -2203,3 +2203,51 @@ body{background:#fff;color:#000}
 .heroStats .kpiLabel{
   color:#000!important;
 }
+
+/* KPI separators + full-width process section */
+.heroStats .heroStat{
+  position:relative;
+}
+.heroStats .heroStat:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  top:20%;
+  right:0;
+  width:1px;
+  height:60%;
+  background:rgba(0,0,0,.14);
+}
+.buildSection.siteContainerSection{
+  padding-left:0!important;
+  padding-right:0!important;
+  max-width:none!important;
+}
+.buildSection.siteContainerSection > *{
+  width:100%!important;
+  max-width:none!important;
+}
+.buildSection > .buildEyebrow,
+.buildSection > h2{
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.buildSection > .buildEyebrow{
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
+.buildSection > h2{
+  max-width:1000px!important;
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+  margin-bottom:3rem!important;
+}
+.buildGrid{
+  width:100%!important;
+  max-width:none!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+@media(max-width:820px){
+  .heroStats .heroStat:nth-child(2)::after{display:none}
+}
