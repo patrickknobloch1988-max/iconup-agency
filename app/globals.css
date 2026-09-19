@@ -2471,3 +2471,24 @@ body{background:#fff;color:#000}
     margin-right:auto!important;
   }
 }
+
+/* KPI grid: subtle separators between every tile */
+.heroStats{
+  gap:0!important;
+}
+.heroStat{
+  border:0!important;
+}
+@media(min-width:821px){
+  .heroStat:not(:last-child){
+    border-right:1px solid rgba(0,0,0,.14)!important;
+  }
+}
+@media(max-width:820px){
+  .heroStat:nth-child(odd){
+    border-right:1px solid rgba(0,0,0,.14)!important;
+  }
+  .heroStat:nth-child(-n+2){
+    border-bottom:1px solid rgba(0,0,0,.14)!important;
+  }
+}
