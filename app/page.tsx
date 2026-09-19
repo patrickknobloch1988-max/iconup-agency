@@ -319,22 +319,41 @@ export default function Home() {
       
 
       <footer className="siteFooter">
-        <div className="siteContainer footerInner">
-        <div className="footerTop">
-          <div className="footerBrand">
-            <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
-            <p>{language === "de" ? "Wir machen aus digitalen Artists reale Marken." : "Turning digital artists into real brands."}</p>
+        <div className="siteContainer footerPanel">
+          <div className="footerCta">
+            <div className="logo footerCtaLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
+            <h2>{language === "de" ? "BEREIT, DEINEN ARTIST ALS MARKE AUFZUBAUEN?" : "READY TO BUILD YOUR ARTIST INTO A BRAND?"}</h2>
+            <p>{language === "de" ? "Wir entwickeln digitale Artists zu klaren, wiedererkennbaren Marken." : "We develop digital artists into clear, recognizable brands."}</p>
+            <a className="footerCtaButton" href="mailto:hello@iconup.agency">{language === "de" ? "PROJEKT STARTEN" : "START A PROJECT"} <span>↗</span></a>
           </div>
-          <nav className="footerNav" aria-label="Footer">
-            <a href="#services">{language === "de" ? "Unsere Aufgabe" : "What we do"}</a>
-            <a href="#artists">{language === "de" ? "Artists" : "Artists"}</a>
-            <a href="#contact">{language === "de" ? "Kontakt" : "Contact"}</a>
-          </nav>
-        </div>
-        <div className="footerBottom">
-          <span>© 2026 ICON/UP AGENCY</span>
-          <span>{t.legal}</span>
-        </div>
+
+          <div className="footerColumns">
+            <div className="footerBrand">
+              <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
+              <p>{language === "de" ? "Wir machen aus digitalen Artists reale Marken." : "Turning digital artists into real brands."}</p>
+            </div>
+            <nav className="footerColumn" aria-label="Footer">
+              <span>PAGES</span>
+              <a href="#approach">{language === "de" ? "Unsere Aufgabe" : "Our mission"}</a>
+              <a href="#build">{language === "de" ? "Was wir bauen" : "What we build"}</a>
+              <a href="#artists">Artists</a>
+            </nav>
+            <div className="footerColumn">
+              <span>CONTACT</span>
+              <a href="mailto:hello@iconup.agency">hello@iconup.agency</a>
+            </div>
+            <div className="footerColumn">
+              <span>SOCIAL</span>
+              <span>Instagram</span>
+              <span>TikTok</span>
+              <span>YouTube</span>
+            </div>
+          </div>
+
+          <div className="footerBottom">
+            <span>© 2026 ICON/UP AGENCY</span>
+            <span>{t.legal}</span>
+          </div>
         </div>
       </footer>
     </main>
