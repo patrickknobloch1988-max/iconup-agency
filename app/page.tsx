@@ -289,18 +289,10 @@ export default function Home() {
                   <p className="artistGenre">{artist.genre}</p>
                   <p className="artistDescription">{artist.description}</p>
                   <div className="artistSocials" aria-label={`${artist.name} platforms`}>
-                    <span className="artistSocial" title="Spotify" aria-label="Spotify">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.35.21.46.67.25 1.02Zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.98-8.16-2.55-11.98-1.39a.94.94 0 1 1-.55-1.8c4.37-1.33 9.8-.69 13.51 1.58.44.27.58.85.31 1.3Zm.13-3.4C15.22 8.33 8.82 8.12 5.12 9.24a1.12 1.12 0 1 1-.65-2.14c4.25-1.29 11.32-1.04 15.77 1.59a1.12 1.12 0 0 1-1.14 1.94Z"/></svg>
-                    </span>
-                    <span className="artistSocial" title="Apple Music" aria-label="Apple Music">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.54c-.02-2.35 1.92-3.49 2.01-3.55a4.32 4.32 0 0 0-3.4-1.84c-1.43-.15-2.82.86-3.55.86-.75 0-1.88-.85-3.1-.82a4.5 4.5 0 0 0-3.79 2.31c-1.65 2.86-.42 7.07 1.16 9.38.79 1.13 1.71 2.4 2.93 2.35 1.19-.05 1.63-.75 3.06-.75 1.42 0 1.83.75 3.07.72 1.28-.02 2.08-1.14 2.84-2.28a9.35 9.35 0 0 0 1.3-2.64 4.08 4.08 0 0 1-2.53-3.74ZM14.72 5.63a4.14 4.14 0 0 0 .95-2.97 4.23 4.23 0 0 0-2.74 1.41 3.95 3.95 0 0 0-.98 2.86 3.5 3.5 0 0 0 2.77-1.3Z"/></svg>
-                    </span>
-                    <span className="artistSocial" title="Instagram" aria-label="Instagram">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.18 2A3.02 3.02 0 0 0 4 7.02v9.96A3.02 3.02 0 0 0 7.02 20h9.96A3.02 3.02 0 0 0 20 16.98V7.02A3.02 3.02 0 0 0 16.98 4H7.02ZM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
-                    </span>
-                    <span className="artistSocial" title="TikTok" aria-label="TikTok">
-                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.8 2c.2 1.7 1.13 2.82 2.77 3.38.52.18 1.05.25 1.43.25v3.1a7.3 7.3 0 0 1-4.2-1.3v7.02a6.07 6.07 0 1 1-5.22-6.02c.38-.05.75-.06 1.12-.03v3.18a3 3 0 1 0 1.1 2.32V2h3Z"/></svg>
-                    </span>
+                    <span className="artistSocial" title="Spotify" aria-label="Spotify"><i className="fa-brands fa-spotify" aria-hidden="true" /></span>
+                    <span className="artistSocial" title="Apple Music" aria-label="Apple Music"><i className="fa-brands fa-apple" aria-hidden="true" /></span>
+                    <span className="artistSocial" title="Instagram" aria-label="Instagram"><i className="fa-brands fa-instagram" aria-hidden="true" /></span>
+                    <span className="artistSocial" title="TikTok" aria-label="TikTok"><i className="fa-brands fa-tiktok" aria-hidden="true" /></span>
                   </div>
                 </div>
               </div>
