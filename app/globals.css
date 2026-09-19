@@ -1598,3 +1598,36 @@ body{background:#fff;color:#000}
     text-align:center!important;
   }
 }
+
+/* Large transparent ICON/UP triangle in footer */
+.siteFooter{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.siteFooter>.footerContact,
+.siteFooter>.footerBottom{
+  position:relative;
+  z-index:2;
+}
+.footerTriangle{
+  position:absolute;
+  z-index:1;
+  top:50%;
+  right:clamp(-10rem,-7vw,-4rem);
+  width:clamp(24rem,42vw,46rem);
+  aspect-ratio:1/1;
+  transform:translateY(-50%) rotate(45deg);
+  border-top:clamp(2.5rem,5vw,5.5rem) solid rgba(0,0,0,.045);
+  border-right:clamp(2.5rem,5vw,5.5rem) solid rgba(0,0,0,.045);
+  pointer-events:none;
+}
+@media(max-width:820px){
+  .footerTriangle{
+    right:-11rem;
+    width:28rem;
+    border-top-width:3rem;
+    border-right-width:3rem;
+    opacity:.8;
+  }
+}
