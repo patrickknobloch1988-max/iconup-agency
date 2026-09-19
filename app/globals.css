@@ -2251,3 +2251,33 @@ body{background:#fff;color:#000}
 @media(max-width:820px){
   .heroStats .heroStat:nth-child(2)::after{display:none}
 }
+
+/* Process grid flush bottom + softer dividers */
+.buildSection{
+  padding-bottom:0!important;
+  margin-bottom:0!important;
+}
+.buildGrid{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+  border-top:1px solid rgba(0,0,0,.12)!important;
+  border-bottom:0!important;
+}
+.buildCard{
+  border-right:1px solid rgba(0,0,0,.12)!important;
+}
+.buildCard:last-child{
+  border-right:0!important;
+}
+@media(max-width:820px){
+  .buildCard{
+    border-bottom:1px solid rgba(0,0,0,.12)!important;
+  }
+  .buildCard:nth-child(2){
+    border-right:0!important;
+  }
+  .buildCard:nth-child(3),
+  .buildCard:nth-child(4){
+    border-bottom:0!important;
+  }
+}
