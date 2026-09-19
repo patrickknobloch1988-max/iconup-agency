@@ -1887,3 +1887,8 @@ body{background:#fff;color:#000}
     padding:150px!important;
   }
 }
+
+/* Artists section must have no inherited .section padding */
+.artists.section.siteContainerSection{
+  padding:0!important;
+}
