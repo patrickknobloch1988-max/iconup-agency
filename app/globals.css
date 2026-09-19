@@ -1293,3 +1293,17 @@ body{background:#fff;color:#000}
   width:100%!important;
   text-align:center!important;
 }
+
+/* Flush roster directly into footer */
+.artists{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+.artists .artistGrid{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+.siteFooter{
+  margin-top:0!important;
+  border-top:0!important;
+}
