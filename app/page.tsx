@@ -229,12 +229,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="principle section siteContainerSection">
-        <p className="kicker light">{t.principleLabel}</p>
-        <h2>{t.principleTitle}</h2>
-        <p className="principleText">{t.principleText}</p>
-      </section>
-
       <section className="section siteContainerSection" id="build">
         <p className="kicker">{t.buildLabel}</p>
         <h2>{t.buildTitle}</h2>
