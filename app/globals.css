@@ -1902,3 +1902,32 @@ body{background:#fff;color:#000}
     border-width:0 0 13.5rem 13.5rem!important;
   }
 }
+
+/* Full-width top navigation + top banner */
+.header .headerInner{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding-left:var(--gutter)!important;
+  padding-right:var(--gutter)!important;
+}
+.hero,
+.heroSliderOnly,
+.heroSlider,
+.heroSlide,
+.heroSlideVisual{
+  width:100%!important;
+  max-width:none!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.hero.siteContainerSection{
+  padding-left:0!important;
+  padding-right:0!important;
+}
+.hero.siteContainerSection > *{
+  width:100%!important;
+  max-width:none!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
