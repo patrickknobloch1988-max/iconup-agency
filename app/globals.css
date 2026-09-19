@@ -1154,3 +1154,21 @@ body{background:#fff;color:#000}
   background:none!important;
   border:0!important;
 }
+
+/* IICII — technical display direction */
+.heroSlideBody h2,
+.sectionTitle,
+.principleText,
+.artistsTitle,
+.contactSimple h2,
+.artistCardContent h3{
+  font-family:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif!important;
+  font-stretch:condensed;
+  font-weight:900!important;
+  letter-spacing:-.045em!important;
+}
+.artistVisualMav{background:#000!important}
+.artistVisualMav img{
+  object-fit:cover!important;
+  object-position:center center!important;
+}
