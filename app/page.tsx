@@ -159,7 +159,7 @@ export default function Home() {
     <main id="main-content">
       <header className="header">
         <div className="headerInner">
-        <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
+        <a className="logo" href="#top" aria-label="ICON/UP Home"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span></a>
         <nav className="nav">
           <a href="#approach">{t.nav[0]}</a>
           <a href="#build">{t.nav[1]}</a>
