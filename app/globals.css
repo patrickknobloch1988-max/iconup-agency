@@ -2539,3 +2539,14 @@ button,a{touch-action:manipulation}
 .legalPage p{font-size:1rem;line-height:1.65;margin:0}
 .legalPage a{color:inherit}
 .legalNotice{margin-top:3rem!important;padding:1rem;border:1px solid rgba(255,255,255,.25);opacity:.75;font-size:.85rem!important}
+
+/* Mobile: remove bottom spacing after What We Do grid */
+@media(max-width:820px){
+  .buildSection{
+    padding-bottom:0!important;
+  }
+  .buildGrid,
+  .buildGrid .buildCard:last-child{
+    margin-bottom:0!important;
+  }
+}
