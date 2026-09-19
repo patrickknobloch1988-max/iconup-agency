@@ -1407,3 +1407,23 @@ body{background:#fff;color:#000}
   .footerColumns{grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}
   .footerBrand{grid-column:1/-1}
 }
+
+/* Footer full-width, borderless */
+.siteFooter{
+  width:100%!important;
+  padding:clamp(3rem,6vw,6rem) var(--gutter)!important;
+}
+.siteFooter .footerPanel{
+  width:100%!important;
+  max-width:none!important;
+  border:0!important;
+  padding:0!important;
+}
+.footerCta{
+  max-width:none!important;
+  width:100%!important;
+}
+.footerCta h2{
+  max-width:none!important;
+  width:100%!important;
+}
