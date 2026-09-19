@@ -1969,3 +1969,16 @@ body{background:#fff;color:#000}
     margin:0!important;
   }
 }
+
+/* Language switcher flush to the far-right edge of desktop navigation */
+@media(min-width:821px){
+  .header .headerInner{
+    padding-right:0!important;
+  }
+  .header .language{
+    justify-self:end!important;
+    margin-left:auto!important;
+    margin-right:0!important;
+    padding-right:0!important;
+  }
+}
