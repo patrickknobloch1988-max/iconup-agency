@@ -2394,3 +2394,51 @@ body{background:#fff;color:#000}
     max-width:34rem!important;
   }
 }
+
+/* Mobile KPI separators + refined What We Do cards */
+@media(max-width:820px){
+  .heroStats{
+    gap:0!important;
+  }
+  .heroStat{
+    position:relative!important;
+  }
+  .heroStat:nth-child(-n+2){
+    border-bottom:1px solid rgba(255,255,255,.24)!important;
+  }
+
+  .buildCard{
+    position:relative!important;
+    display:block!important;
+    padding:1.6rem 1.25rem 1.6rem 4.5rem!important;
+  }
+  .buildCard .buildNumber{
+    position:absolute!important;
+    top:1.65rem!important;
+    left:1.25rem!important;
+    width:2rem!important;
+    margin:0!important;
+    font-size:.78rem!important;
+    line-height:1!important;
+  }
+  .buildCard .buildCardEyebrow,
+  .buildCard h3,
+  .buildCard p{
+    display:block!important;
+    width:100%!important;
+    margin-left:0!important;
+  }
+  .buildCard .buildCardEyebrow{
+    font-size:.75rem!important;
+    line-height:1.2!important;
+  }
+  .buildCard h3{
+    font-size:1.35rem!important;
+    line-height:1.08!important;
+  }
+  .buildCard p{
+    font-size:1rem!important;
+    line-height:1.55!important;
+    max-width:31rem!important;
+  }
+}
