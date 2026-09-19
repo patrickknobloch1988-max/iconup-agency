@@ -1631,3 +1631,29 @@ body{background:#fff;color:#000}
     opacity:.8;
   }
 }
+
+/* Make footer triangle clearly visible */
+.siteFooter .footerTriangle{
+  display:block!important;
+  position:absolute!important;
+  z-index:1!important;
+  top:50%!important;
+  right:-6vw!important;
+  width:clamp(32rem,52vw,60rem)!important;
+  height:auto!important;
+  aspect-ratio:1/1!important;
+  transform:translateY(-50%) rotate(45deg)!important;
+  border-style:solid!important;
+  border-width:clamp(3.5rem,6vw,7rem) clamp(3.5rem,6vw,7rem) 0 0!important;
+  border-color:rgba(0,0,0,.12) rgba(0,0,0,.12) transparent transparent!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+@media(max-width:820px){
+  .siteFooter .footerTriangle{
+    right:-13rem!important;
+    width:34rem!important;
+    border-width:3.5rem 3.5rem 0 0!important;
+    border-color:rgba(0,0,0,.10) rgba(0,0,0,.10) transparent transparent!important;
+  }
+}
