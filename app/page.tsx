@@ -234,7 +234,7 @@ export default function Home() {
 
       <section className="buildSection siteContainerSection" id="build">
         <p className="buildEyebrow">{language === "de" ? "WAS WIR MACHEN" : "WHAT WE DO"}</p>
-        <h2>{language === "de" ? "VON DER IDEE BIS ZUM RELEASE." : "FROM IDEA TO RELEASE."}</h2>
+        <h2>{language === "de" ? <>VON DER IDEE<br />BIS ZUM RELEASE.</> : <>FROM IDEA<br />TO RELEASE.</>}</h2>
         <div className="buildGrid">
           {[
             ["01", language === "de" ? "ERSTELLEN" : "CREATE", language === "de" ? "ARTISTENTWICKLUNG" : "ARTIST DEVELOPMENT", language === "de" ? "Wir entwickeln Positionierung, Sound, Identität und visuelle Welt zu einem Artist-Projekt mit klarer Wiedererkennbarkeit." : "We develop positioning, sound, identity and visual direction into a distinctive artist project."],
