@@ -220,14 +220,7 @@ export default function Home() {
 
       </section>
 
-      <section className="section siteContainerSection" id="approach">
-        <p className="kicker">{t.missionLabel}</p>
-        <h2>{t.missionTitle}</h2>
-        <div className="statementGrid">
-          <span className="bigArrow">↗</span>
-          <p>{t.missionText}</p>
-        </div>
-      </section>
+      
 
       <section className="section siteContainerSection" id="build">
         <p className="kicker">{t.buildLabel}</p>
