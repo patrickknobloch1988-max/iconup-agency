@@ -2281,3 +2281,26 @@ body{background:#fff;color:#000}
     border-bottom:0!important;
   }
 }
+
+/* Center process card content */
+.buildCard{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+.buildNumber{
+  margin-bottom:2.5rem!important;
+}
+.buildCardEyebrow,
+.buildCard h3,
+.buildCardText{
+  width:100%;
+  text-align:center!important;
+}
+.buildCardText{
+  max-width:290px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
