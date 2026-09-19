@@ -1545,3 +1545,29 @@ body{background:#fff;color:#000}
   .footerContact h2{font-size:clamp(3rem,16vw,5rem)}
   .siteFooter>.footerBottom{margin-top:4rem!important}
 }
+
+/* Contact footer: force true centered composition */
+.siteFooter .footerContact{
+  width:100%!important;
+  max-width:var(--container)!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding-left:0!important;
+  padding-right:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+.siteFooter .footerEyebrow,
+.siteFooter .footerContact h2,
+.siteFooter .footerLead,
+.siteFooter .footerDirect{
+  width:100%!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.siteFooter .footerLead{max-width:650px!important}
+.siteFooter .footerContactButton{margin-left:auto!important;margin-right:auto!important}
