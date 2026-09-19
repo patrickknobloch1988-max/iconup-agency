@@ -156,7 +156,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main id="main-content">
       <header className="header">
         <div className="headerInner">
         <a className="logo" href="#top"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></a>
@@ -319,7 +319,7 @@ export default function Home() {
 
       
 
-      <footer className="siteFooter">
+      <footer className="siteFooter" aria-label="Footer">
         <span className="footerTriangle" aria-hidden="true" />
         <div className="footerContact">
           <p className="footerEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
@@ -336,7 +336,7 @@ export default function Home() {
         </div>
         <div className="footerBottom">
           <span>© 2026 ICON/UP AGENCY</span>
-          <span>{t.legal}</span>
+          <nav className="footerLegal" aria-label={language === "de" ? "Rechtliches" : "Legal"}><a href="/impressum">Impressum</a></nav>
         </div>
       </footer>
     </main>
