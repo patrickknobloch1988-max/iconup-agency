@@ -1892,3 +1892,13 @@ body{background:#fff;color:#000}
 .artists.section.siteContainerSection{
   padding:0!important;
 }
+
+/* Artists triangle +50% */
+.artists .artistsIntro>.artistsTriangle{
+  border-width:0 0 21rem 21rem!important;
+}
+@media(max-width:820px){
+  .artists .artistsIntro>.artistsTriangle{
+    border-width:0 0 13.5rem 13.5rem!important;
+  }
+}
