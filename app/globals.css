@@ -2191,3 +2191,15 @@ body{background:#fff;color:#000}
   .buildCard:nth-child(3),.buildCard:nth-child(4){border-bottom:0}
   .buildNumber{margin-bottom:3rem}
 }
+
+/* KPI strip directly below top banner: white with black type */
+.heroStats,
+.hero .heroStats{
+  background:#fff!important;
+  color:#000!important;
+}
+.heroStats .heroStat,
+.heroStats .kpiNumber,
+.heroStats .kpiLabel{
+  color:#000!important;
+}
