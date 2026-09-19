@@ -319,41 +319,22 @@ export default function Home() {
       
 
       <footer className="siteFooter">
-        <div className="siteContainer footerPanel">
-          <div className="footerCta">
-            <div className="logo footerCtaLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
-            <h2>{language === "de" ? <>BEREIT, DEINEN ARTIST<br />ALS MARKE AUFZUBAUEN?</> : <>READY TO BUILD YOUR ARTIST<br />INTO A BRAND?</>}</h2>
-            <p>{language === "de" ? "Wir entwickeln digitale Artists zu klaren, wiedererkennbaren Marken." : "We develop digital artists into clear, recognizable brands."}</p>
-            <a className="footerCtaButton" href="mailto:hello@iconup.agency">{language === "de" ? "PROJEKT STARTEN" : "START A PROJECT"} <span>↗</span></a>
-          </div>
-
-          <div className="footerColumns">
-            <div className="footerBrand">
-              <div className="logo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
-              <p>{language === "de" ? "Wir machen aus digitalen Artists reale Marken." : "Turning digital artists into real brands."}</p>
-            </div>
-            <nav className="footerColumn" aria-label="Footer">
-              <span>PAGES</span>
-              <a href="#approach">{language === "de" ? "Unsere Aufgabe" : "Our mission"}</a>
-              <a href="#build">{language === "de" ? "Was wir bauen" : "What we build"}</a>
-              <a href="#artists">Artists</a>
-            </nav>
-            <div className="footerColumn">
-              <span>CONTACT</span>
-              <a href="mailto:hello@iconup.agency">hello@iconup.agency</a>
-            </div>
-            <div className="footerColumn">
-              <span>SOCIAL</span>
-              <span>Instagram</span>
-              <span>TikTok</span>
-              <span>YouTube</span>
-            </div>
-          </div>
-
-          <div className="footerBottom">
-            <span>© 2026 ICON/UP AGENCY</span>
-            <span>{t.legal}</span>
-          </div>
+        <div className="footerContact">
+          <p className="footerEyebrow">CONTACT</p>
+          <h2>{language === "de" ? <>TALK TO <em>ICON/UP</em></> : <>TALK TO <em>ICON/UP</em></>}</h2>
+          <p className="footerLead">
+            {language === "de"
+              ? "Für Artists, Songwriter und Producer, mit denen wir zusammenarbeiten möchten. Für Labels, Sync und Presse. Direkter Draht zum Team — wir lesen alles."
+              : "For artists, songwriters, and producers we'd like to work with. For labels, sync, and press. Direct line to the team — we read everything."}
+          </p>
+          <a className="footerContactButton" href="mailto:hello@iconup.agency">
+            {language === "de" ? "GET IN TOUCH" : "GET IN TOUCH"} <span>↗</span>
+          </a>
+          <p className="footerDirect">Direct line · <a href="mailto:hello@iconup.agency">hello@iconup.agency</a></p>
+        </div>
+        <div className="footerBottom">
+          <span>© 2026 ICON/UP AGENCY</span>
+          <span>{t.legal}</span>
         </div>
       </footer>
     </main>
