@@ -322,7 +322,7 @@ export default function Home() {
         <div className="siteContainer footerPanel">
           <div className="footerCta">
             <div className="logo footerCtaLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></div>
-            <h2>{language === "de" ? "BEREIT, DEINEN ARTIST ALS MARKE AUFZUBAUEN?" : "READY TO BUILD YOUR ARTIST INTO A BRAND?"}</h2>
+            <h2>{language === "de" ? <>BEREIT, DEINEN ARTIST<br />ALS MARKE AUFZUBAUEN?</> : <>READY TO BUILD YOUR ARTIST<br />INTO A BRAND?</>}</h2>
             <p>{language === "de" ? "Wir entwickeln digitale Artists zu klaren, wiedererkennbaren Marken." : "We develop digital artists into clear, recognizable brands."}</p>
             <a className="footerCtaButton" href="mailto:hello@iconup.agency">{language === "de" ? "PROJEKT STARTEN" : "START A PROJECT"} <span>↗</span></a>
           </div>
