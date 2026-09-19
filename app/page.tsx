@@ -253,8 +253,8 @@ export default function Home() {
       </section>
 
       <section className="artists section siteContainerSection" id="artists">
-        <span className="artistsTriangle" aria-hidden="true" />
         <div className="artistsIntro">
+          <span className="artistsTriangle" aria-hidden="true" />
           <p className="rosterEyebrow">ROSTER</p>
           <h2 className="artistsTitle">ARTISTS</h2>
         </div>
