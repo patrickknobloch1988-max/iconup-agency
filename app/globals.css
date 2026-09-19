@@ -1657,3 +1657,33 @@ body{background:#fff;color:#000}
     border-color:rgba(0,0,0,.10) rgba(0,0,0,.10) transparent transparent!important;
   }
 }
+
+/* ICON/UP signature triangle — oversized, anchored only in top-right corner */
+.siteFooter .footerTriangle{
+  display:block!important;
+  position:absolute!important;
+  z-index:1!important;
+  top:0!important;
+  right:0!important;
+  width:0!important;
+  height:0!important;
+  aspect-ratio:auto!important;
+  transform:none!important;
+  border-style:solid!important;
+  border-width:0 clamp(24rem,42vw,48rem) clamp(24rem,42vw,48rem) 0!important;
+  border-color:transparent rgba(0,0,0,.075) transparent transparent!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:none!important;
+}
+@media(max-width:820px){
+  .siteFooter .footerTriangle{
+    top:0!important;
+    right:0!important;
+    width:0!important;
+    height:0!important;
+    transform:none!important;
+    border-width:0 24rem 24rem 0!important;
+    border-color:transparent rgba(0,0,0,.065) transparent transparent!important;
+  }
+}
