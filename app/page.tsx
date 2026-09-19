@@ -316,18 +316,7 @@ export default function Home() {
           </article>        </div>
       </section>
 
-      <section className="contact section siteContainerSection" id="contact">
-        <div className="contactSimple">
-          <p className="contactEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
-          <h2>{language === "de" ? "LASS UNS REDEN." : "LET'S TALK."}</h2>
-          <p className="contactIntro">
-            {language === "de"
-              ? "Für Artists, Projekte und Kooperationen."
-              : "For artists, projects and collaborations."}
-          </p>
-          <a className="contactEmailHero" href="mailto:hello@iconup.agency">hello@iconup.agency</a>
-        </div>
-      </section>
+      
 
       <footer className="siteFooter">
         <div className="siteContainer footerInner">
