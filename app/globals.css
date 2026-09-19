@@ -1427,3 +1427,44 @@ body{background:#fff;color:#000}
   max-width:none!important;
   width:100%!important;
 }
+
+/* True edge-to-edge footer: remove all inherited container/frame constraints */
+.siteFooter{
+  width:100vw!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:clamp(3rem,6vw,6rem) 0 0!important;
+  border:none!important;
+  outline:none!important;
+  box-shadow:none!important;
+}
+.siteFooter .siteContainer.footerPanel{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  border:none!important;
+  outline:none!important;
+  box-shadow:none!important;
+}
+.siteFooter .footerCta,
+.siteFooter .footerColumns,
+.siteFooter .footerBottom{
+  box-sizing:border-box;
+  width:100%!important;
+  max-width:none!important;
+  padding-left:var(--gutter)!important;
+  padding-right:var(--gutter)!important;
+}
+.siteFooter .footerBottom{
+  border-top:0!important;
+  padding-bottom:2rem!important;
+}
+@media(max-width:820px){
+  .siteFooter{
+    padding:3rem 0 0!important;
+  }
+  .siteFooter .siteContainer.footerPanel{
+    padding:0!important;
+  }
+}
