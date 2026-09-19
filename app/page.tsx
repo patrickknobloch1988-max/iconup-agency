@@ -237,10 +237,10 @@ export default function Home() {
         <h2>{language === "de" ? <>VON DER IDEE<br />BIS ZUM RELEASE.</> : <>FROM IDEA<br />TO RELEASE.</>}</h2>
         <div className="buildGrid">
           {[
-            ["01", language === "de" ? "ERSTELLEN" : "CREATE", language === "de" ? "ARTISTENTWICKLUNG" : "ARTIST DEVELOPMENT", language === "de" ? "Wir entwickeln Positionierung, Sound, Identität und visuelle Welt zu einem Artist-Projekt mit klarer Wiedererkennbarkeit." : "We develop positioning, sound, identity and visual direction into a distinctive artist project."],
-            ["02", language === "de" ? "STEUERN" : "MANAGE", "MANAGEMENT", language === "de" ? "Wir koordinieren Strategie, Planung, Partnerschaften und die nächsten Schritte rund um Artist und Marke." : "We coordinate strategy, planning, partnerships and the next steps around artist and brand."],
-            ["03", language === "de" ? "UMSETZEN" : "PRODUCE", language === "de" ? "CONTENT & PRODUKTION" : "CONTENT & PRODUCTION", language === "de" ? "Wir setzen Content, Visuals, Videos und Kampagnen um und übersetzen die Artist-Identität in konsistente kreative Assets." : "We produce content, visuals, videos and campaigns, translating the artist identity into consistent creative assets."],
-            ["04", language === "de" ? "VERÖFFENTLICHEN" : "RELEASE", "RELEASE", language === "de" ? "Wir planen Veröffentlichungen, Distribution und Rollout und verbinden Musik, Content und Kommunikation zu einem gemeinsamen Release." : "We plan releases, distribution and rollout, connecting music, content and communication into one release."]
+            ["01", language === "de" ? "ERSTELLEN" : "CREATE", language === "de" ? "ARTISTENTWICKLUNG" : "ARTIST DEVELOPMENT", language === "de" ? "Wir entwickeln Sound, Identität und Positionierung zu einem klaren Artist-Projekt." : "We shape sound, identity and positioning into a distinctive artist project."],
+            ["02", language === "de" ? "STEUERN" : "MANAGE", "MANAGEMENT", language === "de" ? "Wir steuern Strategie, Planung und Partnerschaften rund um Artist und Marke." : "We manage strategy, planning and partnerships around artist and brand."],
+            ["03", language === "de" ? "UMSETZEN" : "PRODUCE", language === "de" ? "CONTENT & PRODUKTION" : "CONTENT & PRODUCTION", language === "de" ? "Wir produzieren Content, Visuals und Kampagnen passend zur Artist-Identität." : "We produce content, visuals and campaigns built around the artist identity."],
+            ["04", language === "de" ? "VERÖFFENTLICHEN" : "RELEASE", "RELEASE", language === "de" ? "Wir planen Release, Distribution und Rollout von Musik und Content." : "We plan releases, distribution and rollout across music and content."]
           ].map(([number, eyebrow, title, text]) => (
             <article className="buildCard" key={number}>
               <span className="buildNumber">{number}</span>
