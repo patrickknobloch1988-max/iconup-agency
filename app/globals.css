@@ -1226,3 +1226,40 @@ body{background:#fff;color:#000}
   height:100%!important;
   object-fit:cover!important;
 }
+
+/* Roster section final direction */
+.artists{
+  background:#000!important;
+  color:#fff!important;
+}
+.artists .artistsIntro{
+  width:min(100% - (var(--gutter) * 2),var(--container))!important;
+  max-width:var(--container)!important;
+  margin:0 auto!important;
+  padding-bottom:2rem;
+}
+.rosterEyebrow{
+  margin:0 0 .7rem;
+  color:#fff;
+  font-size:.68rem;
+  line-height:1;
+  font-weight:300;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  opacity:.58;
+}
+.artists .artistsTitle{
+  margin:0;
+  color:#fff!important;
+  font-size:clamp(3rem,7vw,6.5rem);
+  line-height:.88;
+  font-weight:900!important;
+  letter-spacing:-.045em!important;
+}
+.artists .artistGrid>.artistCard,
+.artists .artistCardFeature,
+.artists .artistCardFeature .artistVisual{
+  height:500px!important;
+  min-height:500px!important;
+  max-height:500px!important;
+}
