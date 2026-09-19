@@ -254,9 +254,8 @@ export default function Home() {
 
       <section className="artists section siteContainerSection" id="artists">
         <div className="artistsIntro">
-          <p className="kicker">{t.artistsLabel}</p>
-          <h2 className="artistsTitle"><span>{language === "de" ? "DIE ARTISTS HINTER " : "THE ARTISTS BEHIND "}</span><span className="logo rosterLogo"><span className="logoWord"><span className="logoIcon">ICON</span><span className="logoSlash">/</span><span className="logoUp">UP</span></span><span className="logoMark" aria-hidden="true" /></span></h2>
-          <p className="artistsText">{t.artistsText}</p>
+          <p className="rosterEyebrow">ROSTER</p>
+          <h2 className="artistsTitle">ARTISTS</h2>
         </div>
 
         <div className="artistGrid">
