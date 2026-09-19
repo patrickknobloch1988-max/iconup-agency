@@ -1931,3 +1931,41 @@ body{background:#fff;color:#000}
   margin-left:0!important;
   margin-right:0!important;
 }
+
+/* Desktop header: true full width, nav left / logo center / language right */
+@media(min-width:821px){
+  .header{
+    width:100vw!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .header .headerInner{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:1fr auto 1fr!important;
+    align-items:center!important;
+    width:100%!important;
+    max-width:none!important;
+    margin:0!important;
+    padding-left:var(--gutter)!important;
+    padding-right:var(--gutter)!important;
+  }
+  .header .nav{
+    grid-column:1!important;
+    grid-row:1!important;
+    justify-self:start!important;
+  }
+  .header .logo{
+    grid-column:2!important;
+    grid-row:1!important;
+    justify-self:center!important;
+    margin:0!important;
+  }
+  .header .language{
+    grid-column:3!important;
+    grid-row:1!important;
+    justify-self:end!important;
+    margin:0!important;
+  }
+}
