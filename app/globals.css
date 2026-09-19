@@ -1718,3 +1718,28 @@ body{background:#fff;color:#000}
     border-color:transparent transparent transparent rgba(255,255,255,.065)!important;
   }
 }
+
+/* Keep signature triangle strictly inside the roster headline area */
+.artists{
+  overflow:visible!important;
+}
+.artists .artistsIntro{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.artists .artistsIntro>.rosterEyebrow,
+.artists .artistsIntro>.artistsTitle{
+  position:relative!important;
+  z-index:2!important;
+}
+.artists .artistsIntro>.artistsTriangle{
+  position:absolute!important;
+  z-index:1!important;
+  top:0!important;
+  left:0!important;
+}
+.artists>.artistGrid{
+  position:relative!important;
+  z-index:3!important;
+}
