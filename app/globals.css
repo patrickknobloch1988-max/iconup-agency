@@ -1982,3 +1982,35 @@ body{background:#fff;color:#000}
     padding-right:0!important;
   }
 }
+
+/* Final desktop header layout: full width, logo left, nav centered, language right */
+@media(min-width:821px){
+  .header .headerInner{
+    width:100vw!important;
+    max-width:none!important;
+    margin:0!important;
+    padding-left:var(--gutter)!important;
+    padding-right:0!important;
+    display:grid!important;
+    grid-template-columns:1fr auto 1fr!important;
+    align-items:center!important;
+  }
+  .header .logo{
+    grid-column:1!important;
+    grid-row:1!important;
+    justify-self:start!important;
+    margin:0!important;
+  }
+  .header .nav{
+    grid-column:2!important;
+    grid-row:1!important;
+    justify-self:center!important;
+  }
+  .header .language{
+    grid-column:3!important;
+    grid-row:1!important;
+    justify-self:end!important;
+    margin:0!important;
+    padding-right:0!important;
+  }
+}
