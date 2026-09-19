@@ -1874,3 +1874,16 @@ body{background:#fff;color:#000}
 .artists .artistsTitle{
   margin-bottom:0!important;
 }
+
+/* Requested roster spacing */
+.artists .artistGrid{
+  margin-top:0!important;
+}
+.artists .artistsIntro{
+  padding:150px!important;
+}
+@media(max-width:820px){
+  .artists .artistsIntro{
+    padding:150px!important;
+  }
+}
