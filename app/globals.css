@@ -1860,3 +1860,17 @@ body{background:#fff;color:#000}
     border-width:0 0 9rem 9rem!important;
   }
 }
+
+/* Roster headline band: no extra vertical box spacing */
+.artists .artistsIntro{
+  min-height:0!important;
+  height:auto!important;
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+.artists .rosterEyebrow{
+  margin-top:0!important;
+}
+.artists .artistsTitle{
+  margin-bottom:0!important;
+}
