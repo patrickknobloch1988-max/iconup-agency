@@ -2442,3 +2442,32 @@ body{background:#fff;color:#000}
     max-width:31rem!important;
   }
 }
+
+/* What We Do: no numbering, centered cards */
+.buildCard{
+  text-align:center!important;
+}
+.buildCard .buildNumber{
+  display:none!important;
+}
+.buildCard .buildCardEyebrow,
+.buildCard h3,
+.buildCard p{
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+@media(max-width:820px){
+  .buildCard{
+    padding:1.75rem 1.25rem!important;
+    text-align:center!important;
+  }
+  .buildCard .buildCardEyebrow,
+  .buildCard h3,
+  .buildCard p{
+    width:100%!important;
+    text-align:center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
