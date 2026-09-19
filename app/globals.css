@@ -1211,3 +1211,18 @@ body{background:#fff;color:#000}
     flex-basis:86%!important;
   }
 }
+
+/* Roster fixed card height */
+.artists .artistGrid>.artistCard,
+.artists .artistCardFeature,
+.artists .artistCardFeature .artistVisual{
+  height:400px!important;
+  min-height:400px!important;
+  max-height:400px!important;
+  aspect-ratio:auto!important;
+}
+.artists .artistCardFeature .artistVisual img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
