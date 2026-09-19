@@ -324,8 +324,8 @@ export default function Home() {
           <h2>{language === "de" ? <>LASS UNS <em>VERBINDEN.</em></> : <>LET’S <em>CONNECT.</em></>}</h2>
           <p className="footerLead">
             {language === "de"
-              ? "Für ausgewählte kreative Projekte, Kooperationen, Labels, Sync und Presse. Schreib uns direkt — ohne Umwege."
-              : "For selected creative projects, collaborations, labels, sync and press. Reach us directly — no detours."}
+              ? "Offen für Gespräche, Beratung und kreative Zusammenarbeit — von Video- und Content-Produktion bis zu CapCut-Templates. Auch für Kooperationen, Labels, Sync und Presse."
+              : "Open to conversations, consulting and creative collaboration — from video and content production to CapCut templates. Also for collaborations, labels, sync and press."}
           </p>
           <a className="footerContactButton" href="mailto:hello@iconup.agency">
             {language === "de" ? "NACHRICHT SENDEN" : "SEND A MESSAGE"} <span>↗</span>
