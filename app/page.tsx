@@ -243,7 +243,6 @@ export default function Home() {
             ["04", language === "de" ? "VERÖFFENTLICHEN" : "RELEASE", "RELEASE", language === "de" ? "Wir planen Release, Distribution und Rollout von Musik und Content." : "We plan releases, distribution and rollout across music and content."]
           ].map(([number, eyebrow, title, text]) => (
             <article className="buildCard" key={number}>
-              <span className="buildNumber">{number}</span>
               <p className="buildCardEyebrow">{eyebrow}</p>
               <h3>{title}</h3>
               <p className="buildCardText">{text}</p>
