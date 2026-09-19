@@ -1768,3 +1768,45 @@ body{background:#fff;color:#000}
   z-index:2!important;
   text-align:center!important;
 }
+
+/* Fix roster header: remove accidental inner dark panel and anchor triangle to true corner */
+.artists .artistsIntro{
+  width:100vw!important;
+  max-width:none!important;
+  margin:0!important;
+  margin-left:calc(50% - 50vw)!important;
+  padding:clamp(5rem,8vw,8rem) var(--gutter)!important;
+  background:#000!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+}
+.artists .artistsIntro::before,
+.artists .artistsIntro::after{
+  display:none!important;
+  content:none!important;
+}
+.artists .artistsIntro>.artistsTriangle{
+  top:0!important;
+  left:0!important;
+  right:auto!important;
+  width:0!important;
+  height:0!important;
+  transform:none!important;
+  border-style:solid!important;
+  border-width:0 0 clamp(18rem,30vw,34rem) clamp(18rem,30vw,34rem)!important;
+  border-color:transparent transparent transparent rgba(255,255,255,.075)!important;
+}
+.artists .rosterEyebrow{
+  margin:0 0 .8rem!important;
+  font-size:.62rem!important;
+  line-height:1!important;
+  font-weight:300!important;
+  letter-spacing:.2em!important;
+}
+.artists .artistsTitle{
+  margin:0!important;
+  font-size:clamp(3.5rem,6vw,6rem)!important;
+  line-height:.88!important;
+}
