@@ -1282,3 +1282,14 @@ body{background:#fff;color:#000}
   width:100%!important;
   margin:0!important;
 }
+
+/* Center complete roster heading */
+.artists .artistsIntro{
+  align-items:center!important;
+  text-align:center!important;
+}
+.artists .rosterEyebrow,
+.artists .artistsTitle{
+  width:100%!important;
+  text-align:center!important;
+}
