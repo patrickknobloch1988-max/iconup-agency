@@ -254,69 +254,59 @@ export default function Home() {
         </div>
 
         <div className="artistGrid">
-          <article className="artistCard artistCardFeature">
-            <div className="artistVisual artistVisualMav">
-              <img src="/iicii.png" alt="IICII" />
-              <div className="artistCardOverlay" />
-              <span className="artistIndex">01</span>
-              <div className="artistCardContent">
-                <span className="artistType">{t.artistType}</span>
-                <h3>IICII</h3>
-                <p className="artistGenre">{language === "de" ? "US Drill · Afropop" : "US Drill · Afropop"}</p>
-                <p className="artistDescription">
-                  {language === "de"
-                    ? "Icy Drill, klare Ästhetik und digitale Identität verbinden Sound und visuelle Welt."
-                    : "Icy drill, a clear aesthetic and digital identity connect sound and visual world."}
-                </p>
-                <div className="artistSocials" aria-label="IICII platforms">
-                  <span className="artistSocial" title="Spotify" aria-label="Spotify">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.45a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34a.75.75 0 0 1 .25 1.02Zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.98-8.16-2.55-11.98-1.39a.94.94 0 1 1-.55-1.8c4.37-1.33 9.8-.69 13.51 1.58.44.27.58.85.31 1.3Zm.13-3.4C14.3 7.48 7.9 7.27 4.2 8.39a1.12 1.12 0 1 1-.65-2.14c4.25-1.29 11.32-1.04 15.77 1.59a1.12 1.12 0 0 1-1.14 1.94Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="Apple Music" aria-label="Apple Music">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.9 3.2c-.08.6-.35 1.15-.78 1.59-.43.45-1 .73-1.61.78-.08-.57.1-1.16.49-1.6.4-.47.96-.76 1.57-.82.12 0 .23.02.33.05ZM19.4 16.9c-.45 1.03-.98 1.98-1.64 2.85-.84 1.08-1.73 1.62-2.67 1.64-.62 0-1.37-.36-2.24-.36-.9 0-1.67.35-2.31.36-.91.03-1.84-.53-2.76-1.66-1.98-2.42-3.28-6.63-1.39-9.52a4.38 4.38 0 0 1 3.71-2.2c.69 0 1.68.4 2.23.4.52 0 1.52-.48 2.55-.41.44.02 1.67.17 2.5 1.36a4.08 4.08 0 0 0-2.03 3.69 4 4 0 0 0 2.52 3.67c-.13.38-.29.78-.47 1.18Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="Instagram" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.18 2A3.02 3.02 0 0 0 4 7.02v9.96A3.02 3.02 0 0 0 7.02 20h9.96A3.02 3.02 0 0 0 20 16.98V7.02A3.02 3.02 0 0 0 16.98 4H7.02ZM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="TikTok" aria-label="TikTok">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.8 2c.2 1.7 1.13 2.82 2.77 3.38.52.18 1.05.25 1.43.25v3.1a7.3 7.3 0 0 1-4.2-1.3v7.02a6.07 6.07 0 1 1-5.22-6.02c.38-.05.75-.06 1.12-.03v3.18a3 3 0 1 0 1.1 2.32V2h3Z"/></svg>
-                  </span>
+          {[
+            {
+              name: "IICII",
+              image: "/iicii.png",
+              visualClass: "artistVisualMav",
+              type: t.artistType,
+              genre: "US Drill · Afropop",
+              description:
+                language === "de"
+                  ? "Icy Drill, klare Ästhetik und digitale Identität verbinden Sound und visuelle Welt."
+                  : "Icy drill, a clear aesthetic and digital identity connect sound and visual world.",
+            },
+            {
+              name: "EYNI",
+              image: "https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000db4c81f4b2f9c277ebe1117c.png",
+              visualClass: "artistVisualEyni",
+              type: "Artist · Vocalist",
+              genre: "Afropop · Urban Pop",
+              description:
+                language === "de"
+                  ? "Dunkle, warme Vocals treffen auf modernen Afropop und urbane Ästhetik."
+                  : "Dark, warm vocals meet modern Afropop and an urban aesthetic.",
+            },
+          ].map((artist, index) => (
+            <article className="artistCard artistCardFeature" key={artist.name}>
+              <div className={`artistVisual ${artist.visualClass}`}>
+                <img src={artist.image} alt={artist.name} />
+                <div className="artistCardOverlay" />
+                <span className="artistIndex">{String(index + 1).padStart(2, "0")}</span>
+                <div className="artistCardContent">
+                  <span className="artistType">{artist.type}</span>
+                  <h3>{artist.name}</h3>
+                  <p className="artistGenre">{artist.genre}</p>
+                  <p className="artistDescription">{artist.description}</p>
+                  <div className="artistSocials" aria-label={`${artist.name} platforms`}>
+                    <span className="artistSocial" title="Spotify" aria-label="Spotify">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm5.5 17.3a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34.35.21.46.67.25 1.02Zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.98-8.16-2.55-11.98-1.39a.94.94 0 1 1-.55-1.8c4.37-1.33 9.8-.69 13.51 1.58.44.27.58.85.31 1.3Zm.13-3.4C15.22 8.33 8.82 8.12 5.12 9.24a1.12 1.12 0 1 1-.65-2.14c4.25-1.29 11.32-1.04 15.77 1.59a1.12 1.12 0 0 1-1.14 1.94Z"/></svg>
+                    </span>
+                    <span className="artistSocial" title="Apple Music" aria-label="Apple Music">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.05 12.54c-.02-2.35 1.92-3.49 2.01-3.55a4.32 4.32 0 0 0-3.4-1.84c-1.43-.15-2.82.86-3.55.86-.75 0-1.88-.85-3.1-.82a4.5 4.5 0 0 0-3.79 2.31c-1.65 2.86-.42 7.07 1.16 9.38.79 1.13 1.71 2.4 2.93 2.35 1.19-.05 1.63-.75 3.06-.75 1.42 0 1.83.75 3.07.72 1.28-.02 2.08-1.14 2.84-2.28a9.35 9.35 0 0 0 1.3-2.64 4.08 4.08 0 0 1-2.53-3.74ZM14.72 5.63a4.14 4.14 0 0 0 .95-2.97 4.23 4.23 0 0 0-2.74 1.41 3.95 3.95 0 0 0-.98 2.86 3.5 3.5 0 0 0 2.77-1.3Z"/></svg>
+                    </span>
+                    <span className="artistSocial" title="Instagram" aria-label="Instagram">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.18 2A3.02 3.02 0 0 0 4 7.02v9.96A3.02 3.02 0 0 0 7.02 20h9.96A3.02 3.02 0 0 0 20 16.98V7.02A3.02 3.02 0 0 0 16.98 4H7.02ZM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+                    </span>
+                    <span className="artistSocial" title="TikTok" aria-label="TikTok">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.8 2c.2 1.7 1.13 2.82 2.77 3.38.52.18 1.05.25 1.43.25v3.1a7.3 7.3 0 0 1-4.2-1.3v7.02a6.07 6.07 0 1 1-5.22-6.02c.38-.05.75-.06 1.12-.03v3.18a3 3 0 1 0 1.1 2.32V2h3Z"/></svg>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-
-          <article className="artistCard artistCardFeature">
-            <div className="artistVisual artistVisualEyni">
-              <img src="https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000db4c81f4b2f9c277ebe1117c.png" alt="EYNI" />
-              <div className="artistCardOverlay" />
-              <span className="artistIndex">02</span>
-              <div className="artistCardContent">
-                <span className="artistType">{language === "de" ? "Artist · Vocalist" : "Artist · Vocalist"}</span>
-                <h3>EYNI</h3>
-                <p className="artistGenre">{language === "de" ? "Afropop · Urban Pop" : "Afropop · Urban Pop"}</p>
-                <p className="artistDescription">
-                  {language === "de"
-                    ? "Dunkle, warme Vocals treffen auf modernen Afropop und urbane Ästhetik."
-                    : "Dark, warm vocals meet modern Afropop and an urban aesthetic."}
-                </p>
-                <div className="artistSocials" aria-label="EYNI platforms">
-                  <span className="artistSocial" title="Spotify" aria-label="Spotify">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.58 14.45a.75.75 0 0 1-1.03.25c-2.82-1.72-6.37-2.1-10.55-1.15a.75.75 0 1 1-.33-1.46c4.57-1.04 8.5-.59 11.66 1.34a.75.75 0 0 1 .25 1.02Zm1.47-3.27a.94.94 0 0 1-1.29.31c-3.23-1.98-8.16-2.55-11.98-1.39a.94.94 0 1 1-.55-1.8c4.37-1.33 9.8-.69 13.51 1.58.44.27.58.85.31 1.3Zm.13-3.4C14.3 7.48 7.9 7.27 4.2 8.39a1.12 1.12 0 1 1-.65-2.14c4.25-1.29 11.32-1.04 15.77 1.59a1.12 1.12 0 0 1-1.14 1.94Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="Apple Music" aria-label="Apple Music">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.9 3.2c-.08.6-.35 1.15-.78 1.59-.43.45-1 .73-1.61.78-.08-.57.1-1.16.49-1.6.4-.47.96-.76 1.57-.82.12 0 .23.02.33.05ZM19.4 16.9c-.45 1.03-.98 1.98-1.64 2.85-.84 1.08-1.73 1.62-2.67 1.64-.62 0-1.37-.36-2.24-.36-.9 0-1.67.35-2.31.36-.91.03-1.84-.53-2.76-1.66-1.98-2.42-3.28-6.63-1.39-9.52a4.38 4.38 0 0 1 3.71-2.2c.69 0 1.68.4 2.23.4.52 0 1.52-.48 2.55-.41.44.02 1.67.17 2.5 1.36a4.08 4.08 0 0 0-2.03 3.69 4 4 0 0 0 2.52 3.67c-.13.38-.29.78-.47 1.18Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="Instagram" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.18 2A3.02 3.02 0 0 0 4 7.02v9.96A3.02 3.02 0 0 0 7.02 20h9.96A3.02 3.02 0 0 0 20 16.98V7.02A3.02 3.02 0 0 0 16.98 4H7.02ZM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
-                  </span>
-                  <span className="artistSocial" title="TikTok" aria-label="TikTok">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.8 2c.2 1.7 1.13 2.82 2.77 3.38.52.18 1.05.25 1.43.25v3.1a7.3 7.3 0 0 1-4.2-1.3v7.02a6.07 6.07 0 1 1-5.22-6.02c.38-.05.75-.06 1.12-.03v3.18a3 3 0 1 0 1.1 2.32V2h3Z"/></svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </article>        </div>
+            </article>
+          ))}
+        </div>
       </section>
 
       
