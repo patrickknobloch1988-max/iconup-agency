@@ -319,6 +319,7 @@ export default function Home() {
       
 
       <footer className="siteFooter">
+        <span className="footerTriangle" aria-hidden="true" />
         <div className="footerContact">
           <p className="footerEyebrow">{language === "de" ? "KONTAKT" : "CONTACT"}</p>
           <h2>{language === "de" ? <>LASS UNS <em>VERBINDEN.</em></> : <>LET’S <em>CONNECT.</em></>}</h2>
