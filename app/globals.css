@@ -2828,3 +2828,14 @@ button,a{touch-action:manipulation}
     max-width:320px;
   }
 }
+
+
+/* FAQ: remove bottom section spacing */
+.faqSection{
+  padding-bottom:0!important;
+}
+.faqSection .faqInner,
+.faqSection .faqList,
+.faqSection .faqItem:last-child{
+  margin-bottom:0!important;
+}
