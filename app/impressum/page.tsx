@@ -30,6 +30,40 @@ export default function ImpressumPage() {
           <p>E-Mail: <a href="mailto:hello@iconup.agency">hello@iconup.agency</a></p>
         </section>
 
+        <section aria-labelledby="redaktion">
+          <h2 id="redaktion">Inhaltlich verantwortlich</h2>
+          <p>[Vorname Nachname]<br />Anschrift wie oben</p>
+        </section>
+
+        <section aria-labelledby="angebot">
+          <h2 id="angebot">Über ICON/UP</h2>
+          <p>
+            ICON/UP ist eine unabhängige Artist- und Creative-Agentur. Wir entwickeln digitale Artists
+            und ihre Identitäten von der Idee bis zum Release und verbinden Artistentwicklung,
+            Management, Content-Produktion, Musikdistribution und Markenkooperationen.
+          </p>
+        </section>
+
+        <section aria-labelledby="haftung">
+          <h2 id="haftung">Haftung für Inhalte und Links</h2>
+          <p>
+            Die Inhalte dieser Website werden mit Sorgfalt erstellt und regelmäßig geprüft.
+            Soweit diese Website Links zu externen Angeboten enthält, liegen deren Inhalte
+            außerhalb unseres Einflussbereichs. Für die Inhalte verlinkter Seiten sind die
+            jeweiligen Anbieter verantwortlich.
+          </p>
+        </section>
+
+        <section aria-labelledby="urheberrecht">
+          <h2 id="urheberrecht">Urheberrecht</h2>
+          <p>
+            Inhalte, Gestaltung, Texte, Bilder, Musik und sonstige Werke auf dieser Website
+            unterliegen, soweit anwendbar, dem Urheberrecht oder entsprechenden Nutzungsrechten.
+            Eine Verwendung außerhalb der gesetzlichen Schranken bedarf der vorherigen Zustimmung
+            des jeweiligen Rechteinhabers.
+          </p>
+        </section>
+
         <p className="legalNotice">
           Die Platzhalter für Name und ladungsfähige Anschrift müssen vor der Veröffentlichung durch die korrekten Angaben ersetzt werden.
         </p>
