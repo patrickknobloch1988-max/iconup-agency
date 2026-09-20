@@ -2693,3 +2693,29 @@ button,a{touch-action:manipulation}
   .faqInner h2{font-size:clamp(3rem,13vw,4.5rem)}
   .faqItem summary{padding:1.25rem 0;gap:1rem}
 }
+
+
+/* Desktop: Work With Us + Clear Rights side by side */
+@media(min-width:821px){
+  .joinSection,
+  .rightsSection{
+    display:inline-block!important;
+    vertical-align:top;
+    width:50%!important;
+    min-height:620px;
+    padding-left:max(var(--gutter),calc((100vw - var(--container))/4))!important;
+    padding-right:clamp(2rem,4vw,5rem)!important;
+    box-sizing:border-box;
+  }
+  .joinSection .joinInner,
+  .rightsSection .rightsInner{
+    max-width:560px!important;
+    margin:0!important;
+  }
+  .joinSection + .rightsSection{
+    margin-left:0!important;
+  }
+  .rightsSection + .faqSection{
+    clear:both;
+  }
+}
