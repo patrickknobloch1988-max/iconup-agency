@@ -105,18 +105,16 @@ export default function Home() {
   const heroSlides = language === "de"
     ? [
         { kicker: "Artist", title: "IICII", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
-        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" },
-        { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "Wir verbinden Musik, Content und reale Touchpoints zu einem System.", meta: "2026" }
+        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" }
       ]
     : [
         { kicker: "Artist", title: "IICII", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
-        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" },
-        { kicker: "Current Focus", title: "MUSIC × CULTURE × BRAND", text: "We connect music, content and real-world touchpoints into one system.", meta: "2026" }
+        { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" }
       ];
 
   useEffect(() => {
     const timer = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % 3);
+      setActiveSlide((current) => (current + 1) % heroSlides.length);
     }, 6500);
     return () => window.clearInterval(timer);
   }, []);
@@ -179,7 +177,7 @@ export default function Home() {
           <div className="heroSlideVisual">
             <div className="heroSlideTop">
               <span>{heroSlides[activeSlide].kicker}</span>
-              <span>{String(activeSlide + 1).padStart(2, "0")} / 03</span>
+              <span>{String(activeSlide + 1).padStart(2, "0")} / {String(heroSlides.length).padStart(2, "0")}</span>
             </div>
             {activeSlide === 0 && (
               <div className="heroArtistImage" aria-hidden="true">
@@ -208,8 +206,8 @@ export default function Home() {
                 ))}
               </div>
               <div className="heroSlideArrows">
-                <button onClick={() => setActiveSlide((activeSlide + 2) % 3)} aria-label="Previous slide">←</button>
-                <button onClick={() => setActiveSlide((activeSlide + 1) % 3)} aria-label="Next slide">→</button>
+                <button onClick={() => setActiveSlide((activeSlide - 1 + heroSlides.length) % heroSlides.length)} aria-label="Previous slide">←</button>
+                <button onClick={() => setActiveSlide((activeSlide + 1) % heroSlides.length)} aria-label="Next slide">→</button>
               </div>
             </div>
           </div>
