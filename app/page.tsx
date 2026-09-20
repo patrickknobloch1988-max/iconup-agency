@@ -286,17 +286,6 @@ export default function Home() {
                   ? "Dunkle, warme Vocals treffen auf modernen Afropop und urbane Ästhetik."
                   : "Dark, warm vocals meet modern Afropop and an urban aesthetic.",
             },
-            {
-              name: "MAV+RICH",
-              image: "/file_00000000572c81f4b3b311307322a3b4.png",
-              visualClass: "artistVisualMavRich",
-              type: "Artist",
-              genre: "Deutschrap · French Rap",
-              description:
-                language === "de"
-                  ? "Deutsch-französischer Street-Rap verbindet Melodie, Identität und eine markante visuelle Welt."
-                  : "German-French street rap connects melody, identity and a distinctive visual world.",
-            },
           ].map((artist, index) => (
             <article className="artistCard artistCardFeature" key={artist.name}>
               <div className={`artistVisual ${artist.visualClass}`}>
