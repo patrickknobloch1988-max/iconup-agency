@@ -321,6 +321,60 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="joinSection siteContainerSection" id="apply">
+        <div className="joinInner">
+          <p className="joinEyebrow">WORK WITH US</p>
+          <h2>{language === "de" ? <>DU MACHST MUSIK.<br />WIR BAUEN MIT DIR WEITER.</> : <>YOU MAKE MUSIC.<br />WE BUILD WITH YOU.</>}</h2>
+          <p className="joinLead">
+            {language === "de"
+              ? "Du bist Artist, Songwriter, Producer oder Vocalist und möchtest Teil eines neuen Projekts werden? Wir suchen kreative Talente mit eigener Handschrift – unabhängig davon, ob du bereits veröffentlicht hast oder noch im Hintergrund arbeitest."
+              : "Are you an artist, songwriter, producer or vocalist ready to become part of a new project? We are looking for creative talent with a distinctive voice – whether you already release music or currently work behind the scenes."}
+          </p>
+          <a className="joinButton" href="mailto:hello@iconup.agency?subject=Application%20%E2%80%94%20ICON%2FUP">
+            {language === "de" ? "JETZT BEWERBEN" : "APPLY NOW"} <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section className="rightsSection siteContainerSection" aria-labelledby="rights-title">
+        <div className="rightsInner">
+          <p className="rightsEyebrow">CLEAR RIGHTS. CLEAR SPLITS.</p>
+          <h2 id="rights-title">{language === "de" ? "KLARE REGELN. TRANSPARENTE BETEILIGUNGEN." : "CLEAR TERMS. TRANSPARENT PARTICIPATION."}</h2>
+          <p>
+            {language === "de"
+              ? "Credits, Beteiligungen und Revenue Splits werden projektbezogen vereinbart und transparent dokumentiert. So ist vor einer Veröffentlichung klar, welche Rechte und Anteile für Artists, Songwriter, Producer und weitere Beteiligte vereinbart sind."
+              : "Credits, participation and revenue splits are agreed on a project-by-project basis and documented transparently, so the rights and shares agreed for artists, songwriters, producers and other contributors are clear before release."}
+          </p>
+        </div>
+      </section>
+
+      <section className="faqSection siteContainerSection" id="faq">
+        <div className="faqInner">
+          <p className="faqEyebrow">FAQ</p>
+          <h2>{language === "de" ? "FRAGEN? KLAR." : "QUESTIONS? CLEAR."}</h2>
+          <div className="faqList">
+            {[
+              [language === "de" ? "Kann ich mich auch als Songwriter oder Producer bewerben?" : "Can I apply as a songwriter or producer?",
+               language === "de" ? "Ja. Neben Artists können sich auch Songwriter, Producer und Vocalists vorstellen. Entscheidend sind Sound, Ideen und die Möglichkeit, gemeinsam passende Projekte zu entwickeln." : "Yes. Alongside artists, songwriters, producers and vocalists can introduce themselves. What matters is the sound, the ideas and the potential to develop the right projects together."],
+              [language === "de" ? "Muss ich bereits Musik veröffentlicht haben?" : "Do I need to have released music already?",
+               language === "de" ? "Nein. Auch unveröffentlichte Demos und bisher nicht veröffentlichte Projekte können eingereicht werden." : "No. Unreleased demos and projects that have not yet been published are welcome."],
+              [language === "de" ? "Wie werden Einnahmen und Beteiligungen geregelt?" : "How are revenue and participation handled?",
+               language === "de" ? "Beteiligungen werden für jedes Projekt individuell vereinbart. Die vereinbarten Splits und Credits werden vor der Veröffentlichung transparent dokumentiert." : "Participation is agreed individually for each project. The agreed splits and credits are documented transparently before release."],
+              [language === "de" ? "Was sollte meine Bewerbung enthalten?" : "What should my application include?",
+               language === "de" ? "Eine kurze Vorstellung, Links oder Demos und – falls vorhanden – bisherige Arbeiten oder Social-Media-Profile. Songwriter und Producer können auch Referenzproduktionen oder unveröffentlichte Demos einreichen." : "A short introduction, links or demos and, where available, previous work or social profiles. Songwriters and producers can also submit reference productions or unreleased demos."],
+              [language === "de" ? "Was passiert nach meiner Bewerbung?" : "What happens after I apply?",
+               language === "de" ? "Wir prüfen, ob Sound, Idee und Projekt zu ICON/UP passen. Wenn wir Potenzial für eine Zusammenarbeit sehen, melden wir uns für ein persönliches Gespräch." : "We review whether the sound, idea and project fit ICON/UP. If we see potential for collaboration, we will get in touch for a personal conversation."]
+            ].map(([question, answer]) => (
+              <details className="faqItem" key={question}>
+                <summary>{question}<span aria-hidden="true">+</span></summary>
+                <p>{answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       
 
       <footer className="siteFooter" aria-label="Footer">
