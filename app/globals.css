@@ -2773,3 +2773,9 @@ button,a{touch-action:manipulation}
     margin-top:2rem;
   }
 }
+
+
+/* FAQ visual separation */
+.faqSection{
+  background:#f1f1f1!important;
+}
