@@ -2839,3 +2839,10 @@ button,a{touch-action:manipulation}
 .faqSection .faqItem:last-child{
   margin-bottom:0!important;
 }
+
+
+/* Footer description uses normal sentence casing */
+.siteFooter .footerLead{
+  text-transform:none!important;
+  letter-spacing:normal!important;
+}
