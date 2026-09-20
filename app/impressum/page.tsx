@@ -18,9 +18,9 @@ export default function ImpressumPage() {
           <h2 id="anbieter">Angaben gemäß § 5 DDG</h2>
           <p>
             <strong>ICON/UP</strong><br />
-            Inhaber: [Vorname Nachname]<br />
-            [Straße und Hausnummer]<br />
-            [PLZ Ort]<br />
+            Patrick Knobloch<br />
+            Sprungweg 11a<br />
+            26209 Hatten<br />
             Deutschland
           </p>
         </section>
@@ -32,7 +32,8 @@ export default function ImpressumPage() {
 
         <section aria-labelledby="redaktion">
           <h2 id="redaktion">Inhaltlich verantwortlich</h2>
-          <p>[Vorname Nachname]<br />Anschrift wie oben</p>
+          <p>Patrick Knobloch<br />
+            Anschrift wie oben</p>
         </section>
 
         <section aria-labelledby="angebot">
@@ -63,10 +64,6 @@ export default function ImpressumPage() {
             des jeweiligen Rechteinhabers.
           </p>
         </section>
-
-        <p className="legalNotice">
-          Die Platzhalter für Name und ladungsfähige Anschrift müssen vor der Veröffentlichung durch die korrekten Angaben ersetzt werden.
-        </p>
       </div>
     </main>
   );
