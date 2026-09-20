@@ -2581,3 +2581,30 @@ button,a{touch-action:manipulation}
     animation:none!important;
   }
 }
+
+
+/* Stronger hero typography motion — clearly visible on every slide change */
+@keyframes heroKickerDrop{
+  0%{opacity:0;transform:translate3d(0,-42px,0)}
+  100%{opacity:1;transform:translate3d(0,0,0)}
+}
+@keyframes heroHeadlineFly{
+  0%{opacity:0;transform:translate3d(-140px,0,0)}
+  100%{opacity:1;transform:translate3d(0,0,0)}
+}
+@keyframes heroDescriptionRise{
+  0%{opacity:0;transform:translate3d(0,64px,0)}
+  100%{opacity:1;transform:translate3d(0,0,0)}
+}
+.heroSlideBody .heroSlideMeta{
+  will-change:transform,opacity;
+  animation:heroKickerDrop .7s .05s cubic-bezier(.16,1,.3,1) both!important;
+}
+.heroSlideBody h2{
+  will-change:transform,opacity;
+  animation:heroHeadlineFly .9s .12s cubic-bezier(.16,1,.3,1) both!important;
+}
+.heroSlideBody>p:last-child{
+  will-change:transform,opacity;
+  animation:heroDescriptionRise .75s .28s cubic-bezier(.16,1,.3,1) both!important;
+}
