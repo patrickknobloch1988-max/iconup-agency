@@ -186,6 +186,11 @@ export default function Home() {
                 <img src="/iicii.png" alt="" />
               </div>
             )}
+            {activeSlide === 1 && (
+              <div className="heroArtistImage heroProductionImage" aria-hidden="true">
+                <img src="/file_00000000f9d08210986fcbc07f909ac9.png" alt="" />
+              </div>
+            )}
             <div className="heroSlideBody" key={`${language}-${activeSlide}`}>
               <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
               <h2>{heroSlides[activeSlide].title}</h2>
