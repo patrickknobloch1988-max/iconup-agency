@@ -2786,3 +2786,13 @@ button,a{touch-action:manipulation}
   background:#f1f1ef!important;
   color:#000!important;
 }
+
+
+/* Footer — restore solid black */
+.siteFooter{
+  background:#000!important;
+  color:#fff!important;
+}
+.siteFooter a{
+  color:#fff;
+}
