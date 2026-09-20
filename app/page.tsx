@@ -186,7 +186,7 @@ export default function Home() {
                 <img src="/iicii.png" alt="" />
               </div>
             )}
-            <div className="heroSlideBody">
+            <div className="heroSlideBody" key={`${language}-${activeSlide}`}>
               <p className="heroSlideMeta">{heroSlides[activeSlide].meta}</p>
               <h2>{heroSlides[activeSlide].title}</h2>
               <p>{heroSlides[activeSlide].text}</p>
