@@ -2734,3 +2734,42 @@ button,a{touch-action:manipulation}
     line-height:1.04!important;
   }
 }
+
+
+/* Align both desktop split panels to the same typographic rhythm */
+@media(min-width:821px){
+  .joinSection,
+  .rightsSection{
+    min-height:640px!important;
+    padding-top:clamp(4.5rem,7vw,7rem)!important;
+    padding-bottom:clamp(4.5rem,7vw,7rem)!important;
+  }
+  .joinInner,
+  .rightsInner{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start;
+  }
+  .joinEyebrow,
+  .rightsEyebrow{
+    min-height:1em;
+    margin:0 0 1.15rem!important;
+  }
+  .joinInner h2,
+  .rightsInner h2{
+    font-size:clamp(2.5rem,4.25vw,4.5rem)!important;
+    line-height:1.06!important;
+    min-height:3.18em;
+    margin:0!important;
+  }
+  .joinLead,
+  .rightsInner>p:last-child{
+    max-width:560px!important;
+    font-size:1.05rem!important;
+    line-height:1.7!important;
+    margin:2rem 0 0!important;
+  }
+  .joinButton{
+    margin-top:2rem;
+  }
+}
