@@ -2662,3 +2662,34 @@ button,a{touch-action:manipulation}
     );
   }
 }
+
+
+/* Post-roster: applications, rights and FAQ */
+.joinSection{background:#fff;color:#000;padding-top:clamp(4.5rem,8vw,8rem)!important;padding-bottom:clamp(4.5rem,8vw,8rem)!important}
+.joinInner,.rightsInner,.faqInner{max-width:1100px!important}
+.joinEyebrow,.rightsEyebrow,.faqEyebrow{font-size:.72rem;font-weight:700;letter-spacing:.18em;margin:0 0 1rem}
+.joinInner h2,.rightsInner h2,.faqInner h2{font-family:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif;font-weight:900;letter-spacing:-.045em;line-height:.9;margin:0}
+.joinInner h2{font-size:clamp(3rem,7vw,6.8rem)}
+.joinLead{max-width:760px;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.65;margin:2rem 0}
+.joinButton{display:inline-flex;gap:1rem;align-items:center;background:#000;color:#fff;text-decoration:none;padding:1rem 1.25rem;font-weight:800;font-size:.8rem;letter-spacing:.08em}
+
+.rightsSection{background:#000;color:#fff;padding-top:clamp(4rem,7vw,7rem)!important;padding-bottom:clamp(4rem,7vw,7rem)!important}
+.rightsInner h2{font-size:clamp(2.5rem,5.5vw,5rem);max-width:950px}
+.rightsInner>p:last-child{max-width:780px;font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.7;margin:2rem 0 0;color:rgba(255,255,255,.78)}
+
+.faqSection{background:#fff;color:#000;padding-top:clamp(4rem,7vw,7rem)!important;padding-bottom:clamp(4rem,7vw,7rem)!important}
+.faqInner h2{font-size:clamp(3rem,6vw,5.5rem);margin-bottom:clamp(2.5rem,5vw,4.5rem)}
+.faqList{border-top:1px solid rgba(0,0,0,.2)}
+.faqItem{border-bottom:1px solid rgba(0,0,0,.2)}
+.faqItem summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:2rem;padding:1.5rem 0;font-size:clamp(1rem,1.4vw,1.15rem);font-weight:800}
+.faqItem summary::-webkit-details-marker{display:none}
+.faqItem summary span{font-size:1.5rem;font-weight:400;transition:transform .2s ease}
+.faqItem[open] summary span{transform:rotate(45deg)}
+.faqItem p{max-width:780px;margin:0;padding:0 3rem 1.6rem 0;line-height:1.65;color:rgba(0,0,0,.7)}
+@media(max-width:820px){
+  .joinSection,.rightsSection,.faqSection{padding-top:3.5rem!important;padding-bottom:3.5rem!important}
+  .joinInner h2{font-size:clamp(2.8rem,13vw,4.5rem)}
+  .rightsInner h2{font-size:clamp(2.4rem,10vw,3.7rem)}
+  .faqInner h2{font-size:clamp(3rem,13vw,4.5rem)}
+  .faqItem summary{padding:1.25rem 0;gap:1rem}
+}
