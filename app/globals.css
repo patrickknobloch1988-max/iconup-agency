@@ -2779,3 +2779,10 @@ button,a{touch-action:manipulation}
 .faqSection{
   background:#f1f1f1!important;
 }
+
+
+/* FAQ — visually separate from surrounding sections */
+.faqSection{
+  background:#f1f1ef!important;
+  color:#000!important;
+}
