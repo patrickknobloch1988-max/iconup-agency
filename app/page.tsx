@@ -226,13 +226,24 @@ export default function Home() {
       
 
       <section className="humanSection siteContainerSection">
-        <p className="humanEyebrow">{language === "de" ? "HUMAN MADE" : "HUMAN MADE"}</p>
-        <h2>{language === "de" ? "VON MENSCHEN GESCHAFFEN." : "MADE BY PEOPLE."}</h2>
-        <p>
-          {language === "de"
-            ? "Unsere Songs beginnen nicht bei einem Algorithmus, sondern bei echten Geschichten. Die Songtexte werden von Menschen geschrieben und tragen reale Emotionen, Erfahrungen und Perspektiven in sich."
-            : "Our songs don't begin with an algorithm, but with real stories. Lyrics are written by people and carry real emotions, experiences and perspectives."}
-        </p>
+        <div className="humanStatement">
+          <p className="humanEyebrow">HUMAN MADE</p>
+          <h2>{language === "de" ? "VON MENSCHEN GESCHAFFEN." : "MADE BY PEOPLE."}</h2>
+          <p>
+            {language === "de"
+              ? "Der Kern jedes Songs ist menschlich. Unsere Songtexte werden von Menschen geschrieben – ohne KI. Sie entstehen aus Ideen, Geschichten, Emotionen und Perspektiven, die wir selbst in die Musik einbringen."
+              : "The core of every song is human. Our lyrics are written by people – without AI. They grow from ideas, stories, emotions and perspectives that we bring into the music ourselves."}
+          </p>
+        </div>
+        <div className="aiStatement">
+          <p className="humanEyebrow">AI AS A TOOL</p>
+          <h2>{language === "de" ? "TECHNOLOGIE ALS WERKZEUG." : "TECHNOLOGY AS A TOOL."}</h2>
+          <p>
+            {language === "de"
+              ? "Gleichzeitig gehen wir offen und transparent mit KI um. Wir nutzen sie als kreatives Werkzeug – zum Beispiel für Inspiration, zur Entwicklung visueller Ideen oder um eine bestehende Vision schneller greifbar und umsetzbar zu machen. Die Idee gibt die Richtung vor. KI hilft uns dabei, sie Realität werden zu lassen."
+              : "At the same time, we are open and transparent about our use of AI. We use it as a creative tool – for example for inspiration, developing visual ideas or making an existing vision tangible and achievable faster. The idea sets the direction. AI helps us bring it to life."}
+          </p>
+        </div>
       </section>
 
       <section className="buildSection siteContainerSection" id="build">
