@@ -19,7 +19,7 @@ export default function ImpressumPage() {
           <p>
             <strong>ICON/UP</strong><br />
             Patrick Knobloch<br />
-            Sprungweg 11a<br />
+            (Anschrift auf Anfrage)<br />
             26209 Hatten<br />
             Deutschland
           </p>
