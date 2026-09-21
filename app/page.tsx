@@ -236,8 +236,6 @@ export default function Home() {
           </p>
         </div>
         <div className="aiStatement">
-          <p className="humanEyebrow">AI AS A TOOL</p>
-          <h2>{language === "de" ? "TECHNOLOGIE ALS WERKZEUG." : "TECHNOLOGY AS A TOOL."}</h2>
           <p>
             {language === "de"
               ? "Gleichzeitig gehen wir offen und transparent mit KI um. Wir nutzen sie als kreatives Werkzeug – zum Beispiel für Inspiration, zur Entwicklung visueller Ideen oder um eine bestehende Vision schneller greifbar und umsetzbar zu machen. Die Idee gibt die Richtung vor. KI hilft uns dabei, sie Realität werden zu lassen."
