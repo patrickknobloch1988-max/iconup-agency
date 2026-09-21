@@ -2846,3 +2846,19 @@ button,a{touch-action:manipulation}
   text-transform:none!important;
   letter-spacing:normal!important;
 }
+
+/* Global headline font */
+h1,h2,h3,
+.heroSlideBody h2,
+.sectionTitle,
+.principleText,
+.artistsTitle,
+.contactSimple h2,
+.artistCardContent h3,
+.buildSection>h2,
+.buildCard h3,
+.humanSection h2{
+  font-family:var(--font-rubik-glitch),sans-serif!important;
+  font-weight:400!important;
+  font-style:normal!important;
+}
