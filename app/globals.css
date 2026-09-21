@@ -2858,7 +2858,7 @@ h1,h2,h3,
 .buildSection>h2,
 .buildCard h3,
 .humanSection h2{
-  font-family:var(--font-rubik-glitch),sans-serif!important;
+  font-family:var(--font-poppins),sans-serif!important;
   font-weight:400!important;
   font-style:normal!important;
 }
