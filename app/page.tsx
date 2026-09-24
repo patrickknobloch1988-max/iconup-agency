@@ -230,8 +230,8 @@ export default function Home() {
         <h2>{language === "de" ? "MENSCHLICHER KERN. NEUE WERKZEUGE." : "HUMAN CORE. NEW TOOLS."}</h2>
         <p>
           {language === "de"
-            ? "Der Kern unserer Musik bleibt menschlich: Alle Songtexte werden von Menschen geschrieben – ohne KI. In der kreativen Umsetzung arbeiten wir mit hybriden Prozessen und nutzen KI transparent als Werkzeug für Inspiration, Visualisierung und Produktion. Die Vision kommt vom Menschen. Technologie hilft uns, sie Realität werden zu lassen."
-            : "The core of our music remains human: every lyric is written by people – without AI. In the creative process, we work with hybrid workflows and use AI transparently as a tool for inspiration, visualization and production. The vision comes from people. Technology helps us bring it to life."}
+            ? "Unsere Musik entsteht in einem hybriden Prozess. Texte und die kreative Grundidee eines Songs stammen vom Menschen – ohne KI. Generative Technologien setzen wir anschließend als Werkzeug ein, um Ideen weiterzuentwickeln, Klang und Visuals zu gestalten und die ursprüngliche Vision Realität werden zu lassen. Wir gehen offen und transparent mit diesem Prozess um."
+            : "Our music is created through a hybrid process. Lyrics and the core creative idea of each song come from people – without AI. We then use generative technologies as tools to develop ideas further, shape sound and visuals, and bring the original vision to life. We are open and transparent about this process."}
         </p>
       </section>
 
