@@ -226,22 +226,13 @@ export default function Home() {
       
 
       <section className="humanSection siteContainerSection">
-        <div className="humanStatement">
-          <p className="humanEyebrow">HUMAN MADE</p>
-          <h2>{language === "de" ? "VON MENSCHEN GESCHAFFEN." : "MADE BY PEOPLE."}</h2>
-          <p>
-            {language === "de"
-              ? "Der Kern jedes Songs ist menschlich. Unsere Songtexte werden von Menschen geschrieben – ohne KI. Sie entstehen aus Ideen, Geschichten, Emotionen und Perspektiven, die wir selbst in die Musik einbringen."
-              : "The core of every song is human. Our lyrics are written by people – without AI. They grow from ideas, stories, emotions and perspectives that we bring into the music ourselves."}
-          </p>
-        </div>
-        <div className="aiStatement">
-          <p>
-            {language === "de"
-              ? "Gleichzeitig gehen wir offen und transparent mit KI um. Wir nutzen sie als kreatives Werkzeug – zum Beispiel für Inspiration, zur Entwicklung visueller Ideen oder um eine bestehende Vision schneller greifbar und umsetzbar zu machen. Die Idee gibt die Richtung vor. KI hilft uns dabei, sie Realität werden zu lassen."
-              : "At the same time, we are open and transparent about our use of AI. We use it as a creative tool – for example for inspiration, developing visual ideas or making an existing vision tangible and achievable faster. The idea sets the direction. AI helps us bring it to life."}
-          </p>
-        </div>
+        <p className="humanEyebrow">HUMAN MADE · HYBRID PROCESS</p>
+        <h2>{language === "de" ? "MENSCHLICHER KERN. NEUE WERKZEUGE." : "HUMAN CORE. NEW TOOLS."}</h2>
+        <p>
+          {language === "de"
+            ? "Der Kern unserer Musik bleibt menschlich: Alle Songtexte werden von Menschen geschrieben – ohne KI. In der kreativen Umsetzung arbeiten wir mit hybriden Prozessen und nutzen KI transparent als Werkzeug für Inspiration, Visualisierung und Produktion. Die Vision kommt vom Menschen. Technologie hilft uns, sie Realität werden zu lassen."
+            : "The core of our music remains human: every lyric is written by people – without AI. In the creative process, we work with hybrid workflows and use AI transparently as a tool for inspiration, visualization and production. The vision comes from people. Technology helps us bring it to life."}
+        </p>
       </section>
 
       <section className="buildSection siteContainerSection" id="build">
