@@ -104,11 +104,11 @@ export default function Home() {
   const t = content[language];
   const heroSlides = language === "de"
     ? [
-        { kicker: "Artist", title: "IICII", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "ICI", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" }
       ]
     : [
-        { kicker: "Artist", title: "IICII", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "ICI", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" }
       ];
 
@@ -265,7 +265,7 @@ export default function Home() {
         <div className="artistGrid">
           {[
             {
-              name: "IICII",
+              name: "ICI",
               image: "/iicii.png",
               visualClass: "artistVisualMav",
               type: t.artistType,
