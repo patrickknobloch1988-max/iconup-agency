@@ -181,7 +181,7 @@ export default function Home() {
             </div>
             {activeSlide === 0 && (
               <div className="heroArtistImage" aria-hidden="true">
-                <img src="/iicii.png" alt="" />
+                <img src="/file_000000002a2082108d8722a1fe97fcaa.png" alt="" />
               </div>
             )}
             {activeSlide === 1 && (
