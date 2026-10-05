@@ -266,7 +266,7 @@ export default function Home() {
           {[
             {
               name: "ICI",
-              image: "/iicii.png",
+              image: "/file_000000002a2082108d8722a1fe97fcaa.png",
               visualClass: "artistVisualMav",
               type: t.artistType,
               genre: "US Drill · Afropop",
