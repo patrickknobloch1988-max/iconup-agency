@@ -276,15 +276,15 @@ export default function Home() {
                   : "Icy drill, a clear aesthetic and digital identity connect sound and visual world.",
             },
             {
-              name: "EYNI",
-              image: "https://raw.githubusercontent.com/patrickknobloch1988-max/iconup-agency/main/public/file_00000000db4c81f4b2f9c277ebe1117c.png",
+              name: "KIPAT",
+              image: "/file_000000006fe881f4be3552a446810673.png",
               visualClass: "artistVisualEyni",
-              type: "Artist · Vocalist",
-              genre: "Afropop · Urban Pop",
+              type: "Artist",
+              genre: "Deutschrap · Deutschpop",
               description:
                 language === "de"
-                  ? "Dunkle, warme Vocals treffen auf modernen Afropop und urbane Ästhetik."
-                  : "Dark, warm vocals meet modern Afropop and an urban aesthetic.",
+                  ? "Zwischen Deutschrap und Deutschpop erzählt KIPAT persönliche Geschichten mit ehrlichen Emotionen."
+                  : "Blending German rap and German pop, KIPAT tells personal stories with genuine emotion.",
             },
             {
               name: "MAV+RICH",
