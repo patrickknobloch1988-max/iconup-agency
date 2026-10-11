@@ -2948,3 +2948,20 @@ h1,h2,h3,
   .heroStats .heroStat:nth-child(n+4){border-bottom:0!important}
   .heroStats .kpiLabel{font-size:clamp(.55rem,2.2vw,.72rem)!important;overflow-wrap:break-word}
 }
+
+/* Mobile: consistent 3 x 2 KPI divider grid */
+@media(max-width:820px){
+  .heroStats .heroStat{
+    border-right:1px solid rgba(0,0,0,.14)!important;
+    border-bottom:1px solid rgba(0,0,0,.14)!important;
+  }
+  .heroStats .heroStat:nth-child(3n){
+    border-right:0!important;
+  }
+  .heroStats .heroStat:nth-child(-n+3){
+    border-bottom:1px solid rgba(0,0,0,.14)!important;
+  }
+  .heroStats .heroStat:nth-child(n+4){
+    border-bottom:0!important;
+  }
+}
