@@ -104,11 +104,11 @@ export default function Home() {
   const t = content[language];
   const heroSlides = language === "de"
     ? [
-        { kicker: "Artist", title: "ICI", text: "Digitaler Artist. Reale Identität. Eine Marke, die über Musik hinaus wächst.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "KIPAT", text: "Deutschrap und Deutschpop. Persönliche Geschichten, echte Emotionen.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Aus Reichweite wird Identität. Aus Identität wird eine Marke.", meta: "ICONUP METHOD" }
       ]
     : [
-        { kicker: "Artist", title: "ICI", text: "Digital artist. Real identity. A brand built beyond music.", meta: "ICONUP ROSTER" },
+        { kicker: "Artist", title: "KIPAT", text: "German rap and pop. Personal stories, genuine emotion.", meta: "ICONUP ROSTER" },
         { kicker: "Brand Building", title: "FROM DIGITAL TO REAL.", text: "Attention becomes identity. Identity becomes a real brand.", meta: "ICONUP METHOD" }
       ];
 
@@ -181,7 +181,7 @@ export default function Home() {
             </div>
             {activeSlide === 0 && (
               <div className="heroArtistImage" aria-hidden="true">
-                <img src="/file_000000002a2082108d8722a1fe97fcaa.png" alt="" />
+                <img src="/file_000000006fe881f4be3552a446810673.png" alt="" />
               </div>
             )}
             {activeSlide === 1 && (
@@ -265,17 +265,6 @@ export default function Home() {
         <div className="artistGrid">
           {[
             {
-              name: "ICI",
-              image: "/file_000000002a2082108d8722a1fe97fcaa.png",
-              visualClass: "artistVisualMav",
-              type: t.artistType,
-              genre: "US Drill · Afropop",
-              description:
-                language === "de"
-                  ? "Icy Drill, klare Ästhetik und digitale Identität verbinden Sound und visuelle Welt."
-                  : "Icy drill, a clear aesthetic and digital identity connect sound and visual world.",
-            },
-            {
               name: "KIPAT",
               image: "/file_000000006fe881f4be3552a446810673.png",
               visualClass: "artistVisualEyni",
@@ -285,6 +274,17 @@ export default function Home() {
                 language === "de"
                   ? "Zwischen Deutschrap und Deutschpop erzählt KIPAT persönliche Geschichten mit ehrlichen Emotionen."
                   : "Blending German rap and German pop, KIPAT tells personal stories with genuine emotion.",
+            },
+            {
+              name: "ICI",
+              image: "/file_000000002a2082108d8722a1fe97fcaa.png",
+              visualClass: "artistVisualMav",
+              type: t.artistType,
+              genre: "US Drill · Afropop",
+              description:
+                language === "de"
+                  ? "Icy Drill, klare Ästhetik und digitale Identität verbinden Sound und visuelle Welt."
+                  : "Icy drill, a clear aesthetic and digital identity connect sound and visual world.",
             },
             {
               name: "MAV+RICH",
