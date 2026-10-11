@@ -2916,3 +2916,35 @@ h1,h2,h3,
     max-width:122px;
   }
 }
+
+
+/* Six performance KPIs */
+.heroStats{
+  display:grid!important;
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:0!important;
+}
+.heroStats .heroStat{
+  min-width:0;
+  border:0!important;
+  border-right:1px solid rgba(0,0,0,.14)!important;
+  border-bottom:0!important;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+}
+.heroStats .heroStat:last-child{border-right:0!important}
+@media(max-width:820px){
+  .heroStats{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .heroStats .heroStat{
+    padding:1.15rem .35rem!important;
+    border-right:1px solid rgba(0,0,0,.14)!important;
+    border-bottom:1px solid rgba(0,0,0,.14)!important;
+  }
+  .heroStats .heroStat:nth-child(3n){border-right:0!important}
+  .heroStats .heroStat:nth-child(n+4){border-bottom:0!important}
+  .heroStats .kpiLabel{font-size:clamp(.55rem,2.2vw,.72rem)!important;overflow-wrap:break-word}
+}
