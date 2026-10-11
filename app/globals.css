@@ -2965,3 +2965,15 @@ h1,h2,h3,
     border-bottom:0!important;
   }
 }
+
+/* Mobile KPI numbers: approximately 20% smaller */
+@media(max-width:820px){
+  .heroStats .kpiNumber{
+    font-size:clamp(2.34rem,10.70vw,3.41rem)!important;
+  }
+}
+@media(max-width:390px){
+  .heroStats .kpiNumber{
+    font-size:clamp(2.07rem,10.21vw,2.67rem)!important;
+  }
+}
